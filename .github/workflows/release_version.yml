@@ -1,0 +1,28 @@
+name: Release version
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+      id-token: write # to enable use of OIDC for npm provenance
+    steps:
+    - name: 1/4 | Checkout repo
+      uses: actions/checkout@v3
+    - name: 2/4 | Setup Node environment
+      uses: actions/setup-node@v3
+      with:
+        node-version: "lts/*"
+    - name: 3/4 | Install dependencies
+      run: npm ci
+    - name: 4/4 | Run Semantic Release script
+      run: npm run semantic-release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

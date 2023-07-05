@@ -1,0 +1,28 @@
+{
+  "name": "html-css-practice",
+  "version": "0.0.0-development",
+  "description": "Repository created to record my practice learning HTML & CSS",
+  "main": "index.js",
+  "scripts": {
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NicolasOmar/html-css-practice.git"
+  },
+  "author": "Nicolás Omar González Passerino",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NicolasOmar/html-css-practice/issues"
+  },
+  "homepage": "https://github.com/NicolasOmar/html-css-practice#readme",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^10.0.1",
+    "@semantic-release/exec": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.0.3",
+    "@semantic-release/release-notes-generator": "^11.0.4",
+    "semantic-release": "^21.0.7"
+  }
+}
