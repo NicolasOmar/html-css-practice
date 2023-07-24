@@ -25,16 +25,27 @@
     <!-- Each section is a generic section of a document, should be related in a thematic way, makes sense to be part of the same section element -->
     <section>
       <h2>John Doe</h2>
-      Coder, UX Designer, and Instructor
-      Website: google.com
-      Phone: 555-555-1111
-      Twitter: @johnDoeTestProfile
+      <!-- An addres represents the relevant contact information for its neares article or body element ancestor -->
+      <address>
+        Coder, UX Designer, and Instructor
+        Website: google.com
+        Phone: 555-555-1111
+        Twitter: @johnDoeTestProfile
+      </address>
     </section>
 
     <!-- this is a part of the document and it is self contained (because of the content)-->
     <article>
+      <!-- The header is used to container a content that will be shown as header of a section element -->
+      <header>
+        <h2>About Me</h2>
+      </header>
       <!-- An aside is a type of section for tangencial content that is at the side of the main content, it means is part of the section, but its another type of content -->
-      Hi! I'm John Doe and I'm happy to have you as a reviewer in my repo. <aside>As Anthony Alicea said. Don't imitate, understand! </aside>
+      Hi! I'm John Doe and I'm happy to have you as a reviewer in my repo. <aside>As Anthony Alicea said. Don't imitate, understand!</aside>
+      <!-- The footer represetnt the footer (lowest element) of its nearest ancestor section component (in this case, the header), used to contain author info or bervose agreement details as example -->
+      <footer>
+        Contant Me
+      </footer>
     </article>
 
     <section>

@@ -34,7 +34,7 @@ Until last version, it is no necesary.
   - Understanding about HTML main structural tags (`html`, `head` and `body`)
   - Understanding of metadata in tags like `lang`
   - Usage of sectioning tags like `article` and `section`
-  - Understanding and correct usage of `aside` and `h`
+  - Understanding and correct usage of `aside`, `h` and `address`
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | Typescript |
