@@ -20,18 +20,22 @@ Repository created to record my practice learning HTML and CSS with exercises ba
 | `0.0.X` | How many times I have updated the next assignment/example |
 
 ## Requirements
-TBD
+Until last version, none requirements
 
 ## Setup
-TBD
+Until last version, it is no necesary.
 
 ## How to run it
-TBD
+Until last version, it is no necesary.
 
 ## Repo structure & what i learned in each exercise
-TBD
+- Side notes (in `notes.txt` file) for contextual comments outside the exercies
+- HTML document (`1-document` folder)
+  - Understanding about HTML main structural tags (`html`, `head` and `body`)
+  - Understanding of metadata in tags like `lang`
+  - Usage of sectioning tags like `article` and `section`
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | Typescript |
 | :---: | :---: | :---: | :---: | :---: |
-| [<img src="https://cdn.simpleicons.org/node.js" title="Node Practice Repo" alt="Node Practice Repo" width="48px">](https://github.com/NicolasOmar/node-practice) | [<img src="https://cdn.simpleicons.org/angular" title="Angular Practice Repo" alt="Angular Practice Repo" width="48px">](https://github.com/NicolasOmar/angular-practice) | [<img src="https://cdn.simpleicons.org/graphql" title="GraphQL Practice Repo" alt="GraphQL Practice Repo" width="48px">](https://github.com/NicolasOmar/graphql-practice) | [<img src="https://cdn.simpleicons.org/react" title="React Practice Repo" alt="React Practice Repo" width="48px">](https://github.com/NicolasOmar/react-practice) | [<img src="https://cdn.simpleicons.org/typescript" title="Typescript Practice Repo" alt="Typescript Practice Repo" width="48px">](https://github.com/NicolasOmar/typescript-practice)
+| [<img src="https://cdn.simpleicons.org/node.js" title="Node Practice Repo" alt="Node Practice Repo" width="48">](https://github.com/NicolasOmar/node-practice) | [<img src="https://cdn.simpleicons.org/angular" title="Angular Practice Repo" alt="Angular Practice Repo" width="48">](https://github.com/NicolasOmar/angular-practice) | [<img src="https://cdn.simpleicons.org/graphql" title="GraphQL Practice Repo" alt="GraphQL Practice Repo" width="48">](https://github.com/NicolasOmar/graphql-practice) | [<img src="https://cdn.simpleicons.org/react" title="React Practice Repo" alt="React Practice Repo" width="48">](https://github.com/NicolasOmar/react-practice) | [<img src="https://cdn.simpleicons.org/typescript" title="Typescript Practice Repo" alt="Typescript Practice Repo" width="48">](https://github.com/NicolasOmar/typescript-practice)
