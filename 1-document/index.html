@@ -14,11 +14,17 @@
 
   <!-- here goes all the content of the document-->
   <body>
-    Resume
+    <!--
+      - The h tags use phrasing content, which reffers for text
+      - Represent the heading of a section
+      - The element has a rank from the lesser number (highest raking) to the biggest (lowest raking) = [h1 > h2 > h3 > h4 > h5 > h6]
+      - If you have more than 1 element with same raking, it marks 2 different sections
+    -->
+    <h1>Resume</h1>
 
     <!-- Each section is a generic section of a document, should be related in a thematic way, makes sense to be part of the same section element -->
     <section>
-      John Doe
+      <h2>John Doe</h2>
       Coder, UX Designer, and Instructor
       Website: google.com
       Phone: 555-555-1111
@@ -27,18 +33,19 @@
 
     <!-- this is a part of the document and it is self contained (because of the content)-->
     <article>
-      Hi! I'm John Doe and I'm happy to have you as a reviewer in my repo. As Anthony Alicea said. Don't imitate, understand!
+      <!-- An aside is a type of section for tangencial content that is at the side of the main content, it means is part of the section, but its another type of content -->
+      Hi! I'm John Doe and I'm happy to have you as a reviewer in my repo. <aside>As Anthony Alicea said. Don't imitate, understand! </aside>
     </article>
 
     <section>
-      Services
+      <h2>Services</h2>
       Web Development
       App Development
       Training
     </section>
 
     <section>
-      Skills
+      <h2>Skills</h2>
       HTML
       Markup your content with semantic HTML.
       CSS
@@ -48,7 +55,7 @@
     </section>
 
     <section>
-      Work History
+      <h2>Work History</h2>
       UX/UI Designer
       XYZ Corp
       3 years
@@ -63,17 +70,17 @@
     </section>
 
     <section>
-      Portfolio
+      <h2>Portfolio</h2>
     </section>
 
     <section>
-      Testimonials
+      <h2>Testimonials</h2>
       I love Tony's courses!
       Tony's courses helped me get a job.
     </section>
 
     <section>
-      Mailing Address
+      <h2>Mailing Address</h2>
       111 Main St.
       Somewhere, NY 33333
     </section>
