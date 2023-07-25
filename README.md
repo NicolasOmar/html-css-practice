@@ -12,6 +12,8 @@ Repository created to record my practice learning HTML and CSS with exercises ba
 ## Status
 - Current repo's version is ![HTML & CSS practice version](https://img.shields.io/github/package-json/v/nicolasomar/html-css-practice?color=success&label=%20&style=flat-square)
 
+## Version (currently ![HTML & CSS practice version](https://img.shields.io/github/package-json/v/nicolasomar/html-css-practice?color=success&label=%20&style=flat-square))
+
 ### What does that version number mean?
 | Number | Meaning |
 | ------ | ------ |
@@ -32,9 +34,10 @@ Until last version, it is no necesary.
 - Side notes (in `notes.txt` file) for contextual comments outside the exercies
 - HTML document (`1-document` folder)
   - Understanding about HTML main structural tags (`html`, `head` and `body`)
-  - Understanding of metadata in tags like `lang`
-  - Usage of sectioning tags like `article` and `section`
-  - Understanding and correct usage of `aside`, `h` and `address`
+  - Understanding of metadata in tags such as `lang`
+  - Usage of sectioning elements like `article` and `section`
+  - Understanding and correct usage of `aside`, `h`, `p` and `address` elements
+  - Understanding and correct usage of `ul`, `ol` and `dt` elements
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | Typescript |

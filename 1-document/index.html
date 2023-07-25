@@ -27,10 +27,17 @@
       <h2>John Doe</h2>
       <!-- An addres represents the relevant contact information for its neares article or body element ancestor -->
       <address>
-        Coder, UX Designer, and Instructor
-        Website: google.com
-        Phone: 555-555-1111
-        Twitter: @johnDoeTestProfile
+        <p>Coder, UX Designer, and Instructor</p>
+        <!-- An association list can be implemented first with the dl tag that will wrap a set of name/value groups where the name is in the dt and the values witht he dd tags-->
+        <dl>
+          <dt>Website</dt>
+          <dd>google.com</dd>
+          <dd>yahoo.com</dd>
+          <dt>Phone</dt>
+          <dd>555-555-1111</dd>
+          <dt>Twitter</dt>
+          <dd>@johnDoeTestProfile</dd>
+        </dl>
       </address>
     </section>
 
@@ -41,7 +48,9 @@
         <h2>About Me</h2>
       </header>
       <!-- An aside is a type of section for tangencial content that is at the side of the main content, it means is part of the section, but its another type of content -->
-      Hi! I'm John Doe and I'm happy to have you as a reviewer in my repo. <aside>As Anthony Alicea said. Don't imitate, understand!</aside>
+      <p>
+        Hi! I'm John Doe and I'm happy to have you as a reviewer in my repo. <aside>As Anthony Alicea said. Don't imitate, understand!</aside>
+      </p>
       <!-- The footer represetnt the footer (lowest element) of its nearest ancestor section component (in this case, the header), used to contain author info or bervose agreement details as example -->
       <footer>
         Contant Me
@@ -50,34 +59,59 @@
 
     <section>
       <h2>Services</h2>
-      Web Development
-      App Development
-      Training
+      <!--
+        When you want to make a list of thing where the order is not important, use ul
+        Each li represents an item
+      -->
+      <ul>
+        <li>Web Development</li>
+        <li>App Development</li>
+        <li>Training</li>
+      </ul>
     </section>
 
     <section>
       <h2>Skills</h2>
-      HTML
-      Markup your content with semantic HTML.
-      CSS
-      Layout your content visually for multiple devices.
-      JavaScript
-      Make your content more interactive, and build web applications.
+      <!-- Each paragraph represents one or more sentences that discuss a particular topic-->
+      <p>
+        HTML
+        Markup your content with semantic HTML.
+      </p>
+      <p>
+        CSS
+        Layout your content visually for multiple devices.
+      </p>
+      <p>
+        JavaScript
+        Make your content more interactive, and build web applications.
+      </p>
     </section>
 
     <section>
       <h2>Work History</h2>
-      UX/UI Designer
-      XYZ Corp
-      3 years
-      
-      Web Developer
-      ABC Corp
-      5 years
-      
-      Carpet Cleaner
-      123 Inc.
-      2 years
+      <!--
+        On a ordered list, you have some more ways to cutomize it
+        reversed is a boolean work that will reverse the order of the items from descendint to ascendint (from 1, 2, 3 to 3, 2, 1)
+      -->
+      <ol reversed>
+        <li>
+          UX/UI Designer
+          XYZ Corp
+          3 years
+        </li>
+        
+        <li>
+          Web Developer
+          ABC Corp
+          5 years
+        </li>
+        
+        <li>
+          Carpet Cleaner
+          123 Inc.
+          2 years
+        </li>
+      </ol>
     </section>
 
     <section>
@@ -86,14 +120,22 @@
 
     <section>
       <h2>Testimonials</h2>
-      I love Tony's courses!
-      Tony's courses helped me get a job.
+      <!--
+        When you want to write a quote, its best practice is to avoid putting raw text without any element
+        A element as a parapgraph (p) will give better context of when a text is part of the quote or nor (in negative case, when you add quoter's name outside quote itself)
+      -->
+      <blockquote>
+        <p>I love Tony's courses!</p>
+      </blockquote>
+      <blockquote>
+        <p>Tony's courses helped me get a job.</p>
+      </blockquote>
     </section>
 
     <section>
       <h2>Mailing Address</h2>
-      111 Main St.
-      Somewhere, NY 33333
+      <p>111 Main St.</p>
+      <p>Somewhere, NY 33333</p>
     </section>
   </body>
 </html>
