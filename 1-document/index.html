@@ -14,128 +14,151 @@
 
   <!-- here goes all the content of the document-->
   <body>
-    <!--
-      - The h tags use phrasing content, which reffers for text
-      - Represent the heading of a section
-      - The element has a rank from the lesser number (highest raking) to the biggest (lowest raking) = [h1 > h2 > h3 > h4 > h5 > h6]
-      - If you have more than 1 element with same raking, it marks 2 different sections
-    -->
-    <h1>Resume</h1>
-
-    <!-- Each section is a generic section of a document, should be related in a thematic way, makes sense to be part of the same section element -->
-    <section>
-      <h2>John Doe</h2>
-      <!-- An addres represents the relevant contact information for its neares article or body element ancestor -->
-      <address>
-        <p>Coder, UX Designer, and Instructor</p>
-        <!-- An association list can be implemented first with the dl tag that will wrap a set of name/value groups where the name is in the dt and the values witht he dd tags-->
-        <dl>
-          <dt>Website</dt>
-          <dd>google.com</dd>
-          <dd>yahoo.com</dd>
-          <dt>Phone</dt>
-          <dd>555-555-1111</dd>
-          <dt>Twitter</dt>
-          <dd>@johnDoeTestProfile</dd>
-        </dl>
-      </address>
-    </section>
-
-    <!-- this is a part of the document and it is self contained (because of the content)-->
-    <article>
-      <!-- The header is used to container a content that will be shown as header of a section element -->
-      <header>
-        <h2>About Me</h2>
-      </header>
-      <!-- An aside is a type of section for tangencial content that is at the side of the main content, it means is part of the section, but its another type of content -->
-      <p>
-        Hi! I'm John Doe and I'm happy to have you as a reviewer in my repo. <aside>As Anthony Alicea said. Don't imitate, understand!</aside>
-      </p>
-      <!-- The footer represetnt the footer (lowest element) of its nearest ancestor section component (in this case, the header), used to contain author info or bervose agreement details as example -->
-      <footer>
-        Contant Me
-      </footer>
-    </article>
-
-    <section>
-      <h2>Services</h2>
+    <!-- A main components reffers to the dominant part of a document and it can only be one per document (actually can be more than one, but the rest should been hidden from the one is shown) -->
+    <main>
       <!--
-        When you want to make a list of thing where the order is not important, use ul
-        Each li represents an item
+        - The h tags use phrasing content, which reffers for text
+        - Represent the heading of a section
+        - The element has a rank from the lesser number (highest raking) to the biggest (lowest raking) = [h1 > h2 > h3 > h4 > h5 > h6]
+        - If you have more than 1 element with same raking, it marks 2 different sections
       -->
-      <ul>
-        <li>Web Development</li>
-        <li>App Development</li>
-        <li>Training</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Skills</h2>
-      <!-- Each paragraph represents one or more sentences that discuss a particular topic-->
-      <p>
-        HTML
-        Markup your content with semantic HTML.
-      </p>
-      <p>
-        CSS
-        Layout your content visually for multiple devices.
-      </p>
-      <p>
-        JavaScript
-        Make your content more interactive, and build web applications.
-      </p>
-    </section>
-
-    <section>
-      <h2>Work History</h2>
-      <!--
-        On a ordered list, you have some more ways to cutomize it
-        reversed is a boolean work that will reverse the order of the items from descendint to ascendint (from 1, 2, 3 to 3, 2, 1)
-      -->
-      <ol reversed>
-        <li>
-          UX/UI Designer
-          XYZ Corp
-          3 years
-        </li>
-        
-        <li>
-          Web Developer
-          ABC Corp
-          5 years
-        </li>
-        
-        <li>
-          Carpet Cleaner
-          123 Inc.
-          2 years
-        </li>
-      </ol>
-    </section>
-
-    <section>
-      <h2>Portfolio</h2>
-    </section>
-
-    <section>
-      <h2>Testimonials</h2>
-      <!--
-        When you want to write a quote, its best practice is to avoid putting raw text without any element
-        A element as a parapgraph (p) will give better context of when a text is part of the quote or nor (in negative case, when you add quoter's name outside quote itself)
-      -->
-      <blockquote>
-        <p>I love Tony's courses!</p>
-      </blockquote>
-      <blockquote>
-        <p>Tony's courses helped me get a job.</p>
-      </blockquote>
-    </section>
-
-    <section>
-      <h2>Mailing Address</h2>
-      <p>111 Main St.</p>
-      <p>Somewhere, NY 33333</p>
-    </section>
+      <h1>Resume</h1>
+      
+      <!-- Each section is a generic section of a document, should be related in a thematic way, makes sense to be part of the same section element -->
+      <section>
+        <h2>John Doe</h2>
+        <!-- An addres represents the relevant contact information for its neares article or body element ancestor -->
+        <address>
+          <p>Coder, UX Designer, and Instructor</p>
+          <!-- An association list can be implemented first with the dl tag that will wrap a set of name/value groups where the name is in the dt and the values witht he dd tags-->
+          <dl>
+            <dt>Website</dt>
+            <dd>google.com</dd>
+            <dd>yahoo.com</dd>
+            <dt>Phone</dt>
+            <dd>555-555-1111</dd>
+            <dt>Twitter</dt>
+            <dd>@johnDoeTestProfile</dd>
+          </dl>
+        </address>
+      </section>
+      
+      <!-- this is a part of the document and it is self contained (because of the content)-->
+      <article>
+        <!-- The header is used to container a content that will be shown as header of a section element -->
+        <header>
+          <h2>About Me</h2>
+        </header>
+        <!-- An aside is a type of section for tangencial content that is at the side of the main content, it means is part of the section, but its another type of content -->
+        <p>
+          Hi! I'm John Doe and I'm happy to have you as a reviewer in my repo.
+        <aside>As Anthony Alicea said. Don't imitate, understand!</aside>
+        </p>
+        <!-- The footer represetnt the footer (lowest element) of its nearest ancestor section component (in this case, the header), used to contain author info or bervose agreement details as example -->
+        <footer>
+          Contant Me
+        </footer>
+      </article>
+      
+      <section>
+        <h2>Services</h2>
+        <!--
+              When you want to make a list of thing where the order is not important, use ul
+              Each li represents an item
+            -->
+        <!--
+              On a ordered list, you have some more ways to cutomize it
+              reversed is a boolean work that will reverse the order of the items from descendint to ascendint (from 1, 2, 3 to 3, 2, 1)
+            -->
+        <ul>
+          <li>Web Development</li>
+          <li>App Development</li>
+          <li>Training</li>
+        </ul>
+      </section>
+      
+      <section>
+        <h2>Skills</h2>
+        <!-- Each paragraph represents one or more sentences that discuss a particular topic-->
+        <p>
+          HTML
+          Markup your content with semantic HTML.
+        </p>
+        <p>
+          CSS
+          Layout your content visually for multiple devices.
+        </p>
+        <p>
+          JavaScript
+          Make your content more interactive, and build web applications.
+        </p>
+      </section>
+      
+      <section>
+        <h2>Work History</h2>
+        <!--
+              When you have information that can be understood as tabular data (a set of values and names that you want to compare in a different way), you have the table component that divides its information in 3 sections: thead (header), tbody (body) and tfoot (footer)
+              thead is where the heads of each row will be places
+              tbody is where you have a set of tr (or table rows) where each one has an amount of td (or table cells) equivalent to the numbers of rows setted on the header
+              tfoot is where the user will want to see summray data, that can be showed as is wanted.
+            -->
+        <table>
+          <thead>
+            <tr>
+              <th>Role</th>
+              <th>Company</th>
+              <th>Years</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>UX/UI Designer</td>
+              <td>XYZ Corp</td>
+              <td>3 years</td>
+            </tr>
+            <tr>
+              <td>Web Developer</td>
+              <td>ABC Corp</td>
+              <td>5 years</td>
+            </tr>
+            <tr>
+              <td>Carpet Cleaner</td>
+              <td>123 Inc.</td>
+              <td>2 years</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="2">Total years</td>
+              <td>10</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      
+      <section>
+        <h2>Portfolio</h2>
+      </section>
+      
+      <section>
+        <h2>Testimonials</h2>
+        <!--
+              When you want to write a quote, its best practice is to avoid putting raw text without any element
+              A element as a parapgraph (p) will give better context of when a text is part of the quote or nor (in negative case, when you add quoter's name outside quote itself)
+            -->
+        <blockquote>
+          <p>I love Tony's courses!</p>
+        </blockquote>
+        <blockquote>
+          <p>Tony's courses helped me get a job.</p>
+        </blockquote>
+      </section>
+      
+      <section>
+        <h2>Mailing Address</h2>
+        <p>111 Main St.</p>
+        <p>Somewhere, NY 33333</p>
+      </section>
+    </main>
   </body>
 </html>

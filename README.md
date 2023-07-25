@@ -38,6 +38,7 @@ Until last version, it is no necesary.
   - Usage of sectioning elements like `article` and `section`
   - Understanding and correct usage of `aside`, `h`, `p` and `address` elements
   - Understanding and correct usage of `ul`, `ol` and `dt` elements
+  - Understanding and correct usage of `table`, and `main` elements
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | Typescript |
