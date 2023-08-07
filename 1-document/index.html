@@ -1,8 +1,8 @@
 <!-- DOCTYPE help to start rendering the .html file as a html document -->
 <!DOCTYPE html>
 <!--
-  * html represent the root of html document
-  * lang reperesents document's main language
+  - html represent the root of html document
+  - lang reperesents document's main language
 -->
 <html lang="en">
   <!-- head is document's collection of metadata -->
@@ -64,13 +64,13 @@
       <section>
         <h2>Services</h2>
         <!--
-              When you want to make a list of thing where the order is not important, use ul
-              Each li represents an item
-            -->
+          When you want to make a list of thing where the order is not important, use ul
+          Each li represents an item
+        -->
         <!--
-              On a ordered list, you have some more ways to cutomize it
-              reversed is a boolean work that will reverse the order of the items from descendint to ascendint (from 1, 2, 3 to 3, 2, 1)
-            -->
+          On a ordered list, you have some more ways to cutomize it
+          reversed is a boolean work that will reverse the order of the items from descendint to ascendint (from 1, 2, 3 to 3, 2, 1)
+        -->
         <ul>
           <li>Web Development</li>
           <li>App Development</li>
@@ -98,11 +98,11 @@
       <section>
         <h2>Work History</h2>
         <!--
-              When you have information that can be understood as tabular data (a set of values and names that you want to compare in a different way), you have the table component that divides its information in 3 sections: thead (header), tbody (body) and tfoot (footer)
-              thead is where the heads of each row will be places
-              tbody is where you have a set of tr (or table rows) where each one has an amount of td (or table cells) equivalent to the numbers of rows setted on the header
-              tfoot is where the user will want to see summray data, that can be showed as is wanted.
-            -->
+          When you have information that can be understood as tabular data (a set of values and names that you want to compare in a different way), you have the table component that divides its information in 3 sections: thead (header), tbody (body) and tfoot (footer)
+          thead is where the heads of each row will be places
+          tbody is where you have a set of tr (or table rows) where each one has an amount of td (or table cells) equivalent to the numbers of rows setted on the header
+          tfoot is where the user will want to see summray data, that can be showed as is wanted.
+        -->
         <table>
           <thead>
             <tr>
@@ -158,8 +158,11 @@
       
       <section>
         <h2>Mailing Address</h2>
-        <p>111 Main St.</p>
-        <p>Somewhere, NY 33333</p>
+        <!-- A br makes a line break when you want to set it in a text of several pieces but they have to be together into the same tag (like tese address lines) -->
+        <address>
+          111 Main St.<br />
+          Somewhere, NY 33333
+        </address>
       </section>
     </main>
   </body>
