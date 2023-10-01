@@ -14,6 +14,33 @@
 
   <!-- here goes all the content of the document-->
   <body>
+    <!-- nav is used to define navigation sections where the user will be delivered to other sites or sections of same site -->
+    <nav>
+      <!-- Using a # at the beginning of href, you will point the link to page's fragment, which can be located on section's id -->
+      <ul>
+        <li>
+          <a href="#aboutme">About Me</a>
+        </li>
+        <li>
+          <a href="#services">Services</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#workhistory">Work History</a>
+        </li>
+        <li>
+          <a href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a href="#testimonals">Testimonials</a>
+        </li>
+        <li>
+          <a href="#mailingaddress">Miling Address</a>
+        </li>
+      </ul>
+    </nav>
     <!-- A main components reffers to the dominant part of a document and it can only be one per document (actually can be more than one, but the rest should been hidden from the one is shown) -->
     <main>
       <!--
@@ -33,18 +60,24 @@
           <!-- An association list can be implemented first with the dl tag that will wrap a set of name/value groups where the name is in the dt and the values witht he dd tags-->
           <dl>
             <dt>Website</dt>
-            <dd>google.com</dd>
-            <dd>yahoo.com</dd>
+            <dd>
+              <a href="https://google.com">google.com</a>
+            </dd>
+            <dd>
+              <a href="https://yahoo.com">yahoo.com</a>
+            </dd>
             <dt>Phone</dt>
             <dd>555-555-1111</dd>
             <dt>Twitter</dt>
-            <dd>@johnDoeTestProfile</dd>
+            <dd>
+              <a href="https://twitter.com/johnDoeTestProfile">@johnDoeTestProfile</a>
+            </dd>
           </dl>
         </address>
       </section>
       
       <!-- this is a part of the document and it is self contained (because of the content)-->
-      <article>
+      <article id="aboutme">
         <!-- The header is used to container a content that will be shown as header of a section element -->
         <header>
           <h2>About Me</h2>
@@ -61,7 +94,7 @@
         </footer>
       </article>
       
-      <section>
+      <section id="services">
         <h2>Services</h2>
         <!--
           When you want to make a list of thing where the order is not important, use ul
@@ -78,7 +111,7 @@
         </ul>
       </section>
       
-      <section>
+      <section id="skills">
         <h2>Skills</h2>
         <!-- Each paragraph represents one or more sentences that discuss a particular topic-->
         <p>
@@ -95,7 +128,7 @@
         </p>
       </section>
       
-      <section>
+      <section id="workhistory">
         <h2>Work History</h2>
         <!--
           When you have information that can be understood as tabular data (a set of values and names that you want to compare in a different way), you have the table component that divides its information in 3 sections: thead (header), tbody (body) and tfoot (footer)
@@ -131,17 +164,17 @@
           <tfoot>
             <tr>
               <td colspan="2">Total years</td>
-              <td>10</td>
+              <td>10 years</td>
             </tr>
           </tfoot>
         </table>
       </section>
       
-      <section>
+      <section id="portfolio">
         <h2>Portfolio</h2>
       </section>
       
-      <section>
+      <section id="testimonals">
         <h2>Testimonials</h2>
         <!--
           When you want to write a quote, its best practice is to avoid putting raw text without any element
@@ -156,7 +189,7 @@
         </blockquote>
       </section>
       
-      <section>
+      <section id="mailingaddress">
         <h2>Mailing Address</h2>
         <!-- A br makes a line break when you want to set it in a text of several pieces but they have to be together into the same tag (like tese address lines) -->
         <address>

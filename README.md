@@ -36,11 +36,22 @@ Until last version, it is no necesary.
   - Understanding about HTML main structural tags (`html`, `head` and `body`)
   - Understanding of metadata in tags such as `lang`
   - Usage of sectioning elements like `article` and `section`
-  - Understanding and correct usage of `aside`, `h`, `p` and `address` elements
-  - Understanding and correct usage of listing elements like `ul`, `ol` and `dt`
-  - Understanding and correct usage of `table` and `main` elements
-  - Understanding and correct usage of marker elements like `em`, `strong`, `small`
-  - Understanding and correct usage of `br` element
+  - Understanding and correct usage of the following elements:
+    - `aside`
+    - `h`
+    - `p`
+    - `address`
+    - `ul`
+    - `ol`
+    - `dt`
+    - `table`
+    - `main`
+    - `em`
+    - `strong`
+    - `small`
+    - `br`
+    - `nav`
+  - How to use url's framgments and HTML element `id` to create a navigation in the page
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | Typescript |
