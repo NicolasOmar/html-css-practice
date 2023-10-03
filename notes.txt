@@ -1,0 +1,16 @@
+Check https://html.spec.whatwg.org/ for specs information (should be your base)
+
+When you want to build your sections (starting from document's body and its children), you should think about how other tools will read your structure and create a table of contents based on mentioned section structure (which will look like an inverted tree)
+
+Look at the content and decide what tag works best for that piece of the content, does match the meaning of the tag?
+
+About HTML standard page when you look for a tag:
+- Category is what the element is (related to its type of content)
+- Content is what the element can contain (like a section element can contain others section elements)
+
+To check if a tag can be used inside another (due the combination), check the HTML specifications to have the correct definition
+
+Protocol: A system of rules for two entities to communicate => How do we transfer that text from one computer to another?
+
+Querystring, name/value pair string separated by unpersand (&)
+For example: /search?q=html&page=3
