@@ -51,7 +51,18 @@ Until last version, it is no necesary.
     - `small`
     - `br`
     - `nav`
+    - `form`
+    - `input`
+      - `text`
+      - `radio`
+      - `checkbox`
+    - `textarea`
+    - `label`
+    - `button`
+    - `fieldset`
+    - `legend`
   - How to use url's framgments and HTML element `id` to create a navigation in the page
+  - How to send form information to another page usgin http queries
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | Typescript |

@@ -11,3 +11,6 @@ About HTML standard page when you look for a tag:
 To check if a tag can be used inside another (due the combination), check the HTML specifications to have the correct definition
 
 Protocol: A system of rules for two entities to communicate => How do we transfer that text from one computer to another?
+
+Querystring, name/value pair string separated by unpersand (&)
+For example: /search?q=html&page=3

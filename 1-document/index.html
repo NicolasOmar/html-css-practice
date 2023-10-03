@@ -39,6 +39,9 @@
         <li>
           <a href="#mailingaddress">Miling Address</a>
         </li>
+        <li>
+          <a href="#contactme">Contact Me</a>
+        </li>
       </ul>
     </nav>
     <!-- A main components reffers to the dominant part of a document and it can only be one per document (actually can be more than one, but the rest should been hidden from the one is shown) -->
@@ -90,7 +93,7 @@
         </p>
         <!-- The footer represetnt the footer (lowest element) of its nearest ancestor section component (in this case, the header), used to contain author info or bervose agreement details as example -->
         <footer>
-          Contant Me
+          Contact Me
         </footer>
       </article>
       
@@ -184,7 +187,7 @@
           <p>I love Tony's courses!</p>
         </blockquote>
         <blockquote>
-          <!-- The string element indicates when a text shows importance, seriouness or urgency for its content-->
+          <!-- The 'strong' element indicates when a text shows importance, seriouness or urgency for its content-->
           <p>Tony's courses <strong>helped me get a job.</strong></p>
         </blockquote>
       </section>
@@ -196,6 +199,74 @@
           111 Main St.<br />
           Somewhere, NY 33333
         </address>
+      </section>
+
+      <section id="contactme">
+        <h2>Contact Me</h2>
+        <!-- The action property mentions form's route where will be sending the control data inside the form -->
+        <form action="contactform.html">
+          <!-- In order to make a vertical-formatted form, is good to wrap every label/input pair into a <p> tag to mark a section on the form-->
+          <p>
+            <!-- Label tag is used mostly to show info to the user, it relates with the input id you assign for=[field_id] -->
+            <label for="name">Name</label>
+            <!--
+              Input tag has a lot of properties to adapt into user's need,
+              But to improve autocompletion, first you have to add the 'autocomplete' property
+              And after that, include its name, which will be used by user agent in order to provide the related values added by the user in previous forms
+            -->
+            <input type="text" name="name" id="name" autocomplete required />
+          </p>
+
+          <p>
+            <label for="email">Email</label>
+            <!-- The required property is a boolean that force user to put infomration on mentioned input -->
+            <input type="email" name="email" id="email" autocomplete required />
+          </p>
+
+          <p>
+            <label for="whycontacting">Why contact me?</label>
+            <select name="whycontacting" id="whycontacting">
+              <option value="needcontractor">Need a contractor</option>
+              <option value="requestbudget">Request a budget</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="comments">Comments</label>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+          </p>
+
+          <!--
+            A good visual and code interpretaiton of grouping several inputs/controls in a form is using a 'fieldset' tag
+            The tag will draw a box to wrap all mentioned children inputs
+            A good addition to that form is the 'legend' tag, which will work as box title to reference the children inputs
+          -->
+          <fieldset>
+            <legend>Best Contact Time</legend>
+
+            <p>
+              <label for="contacttime_one">Morning</label>
+              <input type="radio" name="contacttime" id="contacttime_one">
+            </p>
+            
+            <p>
+              <label for="contacttime_two">Afternoon</label>
+              <input type="radio" name="contacttime" id="contacttime_two">
+            </p>
+            
+            <p>
+              <label for="contacttime_three">Evening</label>
+              <input type="radio" name="contacttime" id="contacttime_three">
+            </p>
+
+            <p>
+              <label for="asap">ASAP</label>
+              <input type="checkbox" name="asap" id="asap">
+            </p>
+          </fieldset>
+          
+          <button type="submit">Send</button>
+        </form>
       </section>
     </main>
   </body>
