@@ -1,273 +1,282 @@
 <!-- DOCTYPE help to start rendering the .html file as a html document -->
 <!DOCTYPE html>
 <!--
-  - html represent the root of html document
+  - <html> represent the root of html document
   - lang reperesents document's main language
 -->
 <html lang="en">
-  <!-- head is document's collection of metadata -->
-  <head>
-    <meta charset="UTF-8">
-    <!-- title represents document's title, used for bookmarks and as google search scrapling, there only can be one per document -->
-    <title>Resume of John Doe</title>
-  </head>
+<!-- <head> is document's collection of metadata -->
 
-  <!-- here goes all the content of the document-->
-  <body>
-    <!-- nav is used to define navigation sections where the user will be delivered to other sites or sections of same site -->
-    <nav>
-      <!-- Using a # at the beginning of href, you will point the link to page's fragment, which can be located on section's id -->
-      <ul>
-        <li>
-          <a href="#aboutme">About Me</a>
-        </li>
-        <li>
-          <a href="#services">Services</a>
-        </li>
-        <li>
-          <a href="#skills">Skills</a>
-        </li>
-        <li>
-          <a href="#workhistory">Work History</a>
-        </li>
-        <li>
-          <a href="#portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a href="#testimonals">Testimonials</a>
-        </li>
-        <li>
-          <a href="#mailingaddress">Miling Address</a>
-        </li>
-        <li>
-          <a href="#contactme">Contact Me</a>
-        </li>
-      </ul>
-    </nav>
-    <!-- A main components reffers to the dominant part of a document and it can only be one per document (actually can be more than one, but the rest should been hidden from the one is shown) -->
-    <main>
-      <!--
-        - The h tags use phrasing content, which reffers for text
+<head>
+  <meta charset="UTF-8">
+  <!-- <title> represents document's title, used for bookmarks and as google search scrapling, there only can be one per document -->
+  <title>Resume of John Doe</title>
+  <!--
+      You are adding a <link> to another resource, which is a stylesheet
+      The file we are linking is considered a author stylesheet because is related to author's work
+    -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<!-- Here goes all the content of the document-->
+
+<body>
+  <!-- <nav> is used to define navigation sections where the user will be delivered to other sites or sections of same site -->
+  <nav>
+    <!-- Using a '#' at the beginning of href, you will point the link to page's fragment, which can be located on section's id -->
+    <ul>
+      <li>
+        <a href="#aboutme">About Me</a>
+      </li>
+      <li>
+        <a href="#services">Services</a>
+      </li>
+      <li>
+        <a href="#skills">Skills</a>
+      </li>
+      <li>
+        <a href="#workhistory">Work History</a>
+      </li>
+      <li>
+        <a href="#portfolio">Portfolio</a>
+      </li>
+      <li>
+        <a href="#testimonals">Testimonials</a>
+      </li>
+      <li>
+        <a href="#mailingaddress">Miling Address</a>
+      </li>
+      <li>
+        <a href="#contactme">Contact Me</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- A <main> components reffers to the dominant part of a document and it can only be one per document (actually can be more than one, but the rest should been hidden from the one is shown) -->
+  <main>
+    <!--
+        - The <h> tags use phrasing content, which reffers for text
         - Represent the heading of a section
-        - The element has a rank from the lesser number (highest raking) to the biggest (lowest raking) = [h1 > h2 > h3 > h4 > h5 > h6]
+        - The element has a rank from the lesser number (highest raking) to the biggest (lowest raking) = [<h1> > <h2> > <h3> > <h4> > <h5> > <h6>]
         - If you have more than 1 element with same raking, it marks 2 different sections
       -->
-      <h1>Resume</h1>
-      
-      <!-- Each section is a generic section of a document, should be related in a thematic way, makes sense to be part of the same section element -->
-      <section>
-        <h2>John Doe</h2>
-        <!-- An addres represents the relevant contact information for its neares article or body element ancestor -->
-        <address>
-          <p>Coder, UX Designer, and Instructor</p>
-          <!-- An association list can be implemented first with the dl tag that will wrap a set of name/value groups where the name is in the dt and the values witht he dd tags-->
-          <dl>
-            <dt>Website</dt>
-            <dd>
-              <a href="https://google.com">google.com</a>
-            </dd>
-            <dd>
-              <a href="https://yahoo.com">yahoo.com</a>
-            </dd>
-            <dt>Phone</dt>
-            <dd>555-555-1111</dd>
-            <dt>Twitter</dt>
-            <dd>
-              <a href="https://twitter.com/johnDoeTestProfile">@johnDoeTestProfile</a>
-            </dd>
-          </dl>
-        </address>
-      </section>
-      
-      <!-- this is a part of the document and it is self contained (because of the content)-->
-      <article id="aboutme">
-        <!-- The header is used to container a content that will be shown as header of a section element -->
-        <header>
-          <h2>About Me</h2>
-        </header>
-        <!-- An aside is a type of section for tangencial content that is at the side of the main content, it means is part of the section, but its another type of content -->
-        <p>
-          <!-- The em element stress emphasis of its content, changes the meaning of a sentence -->
-          <!-- The small element express a side comment that has its importance but you want to reduce its size -->
-          Hi! I'm John Doe and I'm <em>happy</em> to have you as a reviewer in my repo. <aside><small>As Anthony Alicea said. Don't imitate, understand!</small></aside>
-        </p>
-        <!-- The footer represetnt the footer (lowest element) of its nearest ancestor section component (in this case, the header), used to contain author info or bervose agreement details as example -->
-        <footer>
-          Contact Me
-        </footer>
-      </article>
-      
-      <section id="services">
-        <h2>Services</h2>
-        <!--
-          When you want to make a list of thing where the order is not important, use ul
-          Each li represents an item
+    <h1>Resume</h1>
+
+    <!-- Each <section> is a generic section of a document, should be related in a thematic way, makes sense to be part of the same section element -->
+    <section>
+      <h2>John Doe</h2>
+      <!-- An <addres> represents the relevant contact information for its neares article or body element ancestor -->
+      <address>
+        <p>Coder, UX Designer, and Instructor</p>
+        <!-- An association list can be implemented first with the <dl> tag that will wrap a set of name/value groups where the name is in the dt and the values witht he <dd> tags-->
+        <dl>
+          <dt>Website</dt>
+          <dd>
+            <a href="https://google.com">google.com</a>
+          </dd>
+          <dd>
+            <a href="https://yahoo.com">yahoo.com</a>
+          </dd>
+          <dt>Phone</dt>
+          <dd>555-555-1111</dd>
+          <dt>Twitter</dt>
+          <dd>
+            <a href="https://twitter.com/johnDoeTestProfile">@johnDoeTestProfile</a>
+          </dd>
+        </dl>
+      </address>
+    </section>
+
+    <!-- this is a part of the document and it is self contained (because of the content)-->
+    <article id="aboutme">
+      <!-- The <header> is used to container a content that will be shown as header of a section element -->
+      <header>
+        <h2>About Me</h2>
+      </header>
+      <!-- An <aside> is a type of section for tangencial content that is at the side of the main content, it means is part of the section, but its another type of content -->
+      <p>
+        <!-- The <em> element stress emphasis of its content, changes the meaning of a sentence -->
+        <!-- The <small> element express a side comment that has its importance but you want to reduce its size -->
+        Hi! I'm John Doe and I'm <em>happy</em> to have you as a reviewer in my repo.
+      <aside><small>As Anthony Alicea said. Don't imitate, understand!</small></aside>
+      </p>
+      <!-- The <footer> represetnt the footer (lowest element) of its nearest ancestor section component (in this case, the header), used to contain author info or bervose agreement details as example -->
+      <footer>
+        Contact Me
+      </footer>
+    </article>
+
+    <section id="services">
+      <h2>Services</h2>
+      <!--
+          When you want to make a list of thing where the order is not important, use <ul>
+          Each <li> represents an item
         -->
-        <!--
+      <!--
           On a ordered list, you have some more ways to cutomize it
           reversed is a boolean work that will reverse the order of the items from descendint to ascendint (from 1, 2, 3 to 3, 2, 1)
         -->
-        <ul>
-          <li>Web Development</li>
-          <li>App Development</li>
-          <li>Training</li>
-        </ul>
-      </section>
-      
-      <section id="skills">
-        <h2>Skills</h2>
-        <!-- Each paragraph represents one or more sentences that discuss a particular topic-->
-        <p>
-          HTML
-          Markup your content with semantic HTML.
-        </p>
-        <p>
-          CSS
-          Layout your content visually for multiple devices.
-        </p>
-        <p>
-          JavaScript
-          Make your content more interactive, and build web applications.
-        </p>
-      </section>
-      
-      <section id="workhistory">
-        <h2>Work History</h2>
-        <!--
-          When you have information that can be understood as tabular data (a set of values and names that you want to compare in a different way), you have the table component that divides its information in 3 sections: thead (header), tbody (body) and tfoot (footer)
-          thead is where the heads of each row will be places
-          tbody is where you have a set of tr (or table rows) where each one has an amount of td (or table cells) equivalent to the numbers of rows setted on the header
-          tfoot is where the user will want to see summray data, that can be showed as is wanted.
-        -->
-        <table>
-          <thead>
-            <tr>
-              <th>Role</th>
-              <th>Company</th>
-              <th>Years</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>UX/UI Designer</td>
-              <td>XYZ Corp</td>
-              <td>3 years</td>
-            </tr>
-            <tr>
-              <td>Web Developer</td>
-              <td>ABC Corp</td>
-              <td>5 years</td>
-            </tr>
-            <tr>
-              <td>Carpet Cleaner</td>
-              <td>123 Inc.</td>
-              <td>2 years</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <td colspan="2">Total years</td>
-              <td>10 years</td>
-            </tr>
-          </tfoot>
-        </table>
-      </section>
-      
-      <section id="portfolio">
-        <h2>Portfolio</h2>
-      </section>
-      
-      <section id="testimonals">
-        <h2>Testimonials</h2>
-        <!--
-          When you want to write a quote, its best practice is to avoid putting raw text without any element
-          A element as a parapgraph (p) will give better context of when a text is part of the quote or nor (in negative case, when you add quoter's name outside quote itself)
-        -->
-        <blockquote>
-          <p>I love Tony's courses!</p>
-        </blockquote>
-        <blockquote>
-          <!-- The 'strong' element indicates when a text shows importance, seriouness or urgency for its content-->
-          <p>Tony's courses <strong>helped me get a job.</strong></p>
-        </blockquote>
-      </section>
-      
-      <section id="mailingaddress">
-        <h2>Mailing Address</h2>
-        <!-- A br makes a line break when you want to set it in a text of several pieces but they have to be together into the same tag (like tese address lines) -->
-        <address>
-          111 Main St.<br />
-          Somewhere, NY 33333
-        </address>
-      </section>
+      <ul>
+        <li>Web Development</li>
+        <li>App Development</li>
+        <li>Training</li>
+      </ul>
+    </section>
 
-      <section id="contactme">
-        <h2>Contact Me</h2>
-        <!-- The action property mentions form's route where will be sending the control data inside the form -->
-        <form action="contactform.html">
-          <!-- In order to make a vertical-formatted form, is good to wrap every label/input pair into a <p> tag to mark a section on the form-->
-          <p>
-            <!-- Label tag is used mostly to show info to the user, it relates with the input id you assign for=[field_id] -->
-            <label for="name">Name</label>
-            <!--
-              Input tag has a lot of properties to adapt into user's need,
-              But to improve autocompletion, first you have to add the 'autocomplete' property
+    <section id="skills">
+      <h2>Skills</h2>
+      <!-- Each paragraph represents one or more sentences that discuss a particular topic-->
+      <p>
+        HTML
+        Markup your content with semantic HTML.
+      </p>
+      <p>
+        CSS
+        Layout your content visually for multiple devices.
+      </p>
+      <p>
+        JavaScript
+        Make your content more interactive, and build web applications.
+      </p>
+    </section>
+
+    <section id="workhistory">
+      <h2>Work History</h2>
+      <!--
+          When you have information that can be understood as tabular data (a set of values and names that you want to compare in a different way), you have the <table> component that divides its information in 3 sections: <thead> (header), <tbody> (body) and <tfoot> (footer)
+          - thead is where the heads of each row will be places
+          - tbody is where you have a set of tr (or table rows) where each one has an amount of td (or table cells) equivalent to the numbers of rows setted on the header
+          - tfoot is where the user will want to see summray data, that can be showed as is wanted.
+        -->
+      <table>
+        <thead>
+          <tr>
+            <th>Role</th>
+            <th>Company</th>
+            <th>Years</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>UX/UI Designer</td>
+            <td>XYZ Corp</td>
+            <td>3 years</td>
+          </tr>
+          <tr>
+            <td>Web Developer</td>
+            <td>ABC Corp</td>
+            <td>5 years</td>
+          </tr>
+          <tr>
+            <td>Carpet Cleaner</td>
+            <td>123 Inc.</td>
+            <td>2 years</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Total years</td>
+            <td>10 years</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+    </section>
+
+    <section id="testimonals">
+      <h2>Testimonials</h2>
+      <!--
+          When you want to write a quote, its best practice is to avoid putting raw text without any element
+          A element as a parapgraph <p> will give better context of when a text is part of the quote or nor (in negative case, when you add quoter's name outside quote itself)
+        -->
+      <blockquote>
+        <p>I love Tony's courses!</p>
+      </blockquote>
+      <blockquote>
+        <!-- The <strong> element indicates when a text shows importance, seriouness or urgency for its content -->
+        <p>Tony's courses <strong>helped me get a job.</strong></p>
+      </blockquote>
+    </section>
+
+    <section id="mailingaddress">
+      <h2>Mailing Address</h2>
+      <!-- A <br> makes a line break when you want to set it in a text of several pieces but they have to be together into the same tag (like tese address lines) -->
+      <address>
+        111 Main St.<br />
+        Somewhere, NY 33333
+      </address>
+    </section>
+
+    <section id="contactme">
+      <h2>Contact Me</h2>
+      <!-- The [action] property mentions form's route where will be sending the control data inside the form -->
+      <form action="contactform.html">
+        <!-- In order to make a vertical-formatted form, is good to wrap every label/input pair into a <p> tag to mark a section on the form-->
+        <p>
+          <!-- <label> tag is used mostly to show info to the user, it relates with the input id you assign for=[field_id] -->
+          <label for="name">Name</label>
+          <!--
+              <input> tag has a lot of properties to adapt into user's need,
+              But to improve autocompletion, first you have to add the [autocomplete] property
               And after that, include its name, which will be used by user agent in order to provide the related values added by the user in previous forms
             -->
-            <input type="text" name="name" id="name" autocomplete required />
-          </p>
+          <input type="text" name="name" id="name" autocomplete required />
+        </p>
 
-          <p>
-            <label for="email">Email</label>
-            <!-- The required property is a boolean that force user to put infomration on mentioned input -->
-            <input type="email" name="email" id="email" autocomplete required />
-          </p>
+        <p>
+          <label for="email">Email</label>
+          <!-- The [required] property is a boolean that force user to put infomration on mentioned input -->
+          <input type="email" name="email" id="email" autocomplete required />
+        </p>
 
-          <p>
-            <label for="whycontacting">Why contact me?</label>
-            <select name="whycontacting" id="whycontacting">
-              <option value="needcontractor">Need a contractor</option>
-              <option value="requestbudget">Request a budget</option>
-            </select>
-          </p>
+        <p>
+          <label for="whycontacting">Why contact me?</label>
+          <select name="whycontacting" id="whycontacting">
+            <option value="needcontractor">Need a contractor</option>
+            <option value="requestbudget">Request a budget</option>
+          </select>
+        </p>
 
-          <p>
-            <label for="comments">Comments</label>
-            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
-          </p>
+        <p>
+          <label for="comments">Comments</label>
+          <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        </p>
 
-          <!--
-            A good visual and code interpretaiton of grouping several inputs/controls in a form is using a 'fieldset' tag
+        <!--
+            A good visual and code interpretaiton of grouping several inputs/controls in a form is using a <fieldset> tag
             The tag will draw a box to wrap all mentioned children inputs
-            A good addition to that form is the 'legend' tag, which will work as box title to reference the children inputs
+            A good addition to that form is the <legend> tag, which will work as box title to reference the children inputs
           -->
-          <fieldset>
-            <legend>Best Contact Time</legend>
+        <fieldset>
+          <legend>Best Contact Time</legend>
 
-            <p>
-              <label for="contacttime_one">Morning</label>
-              <input type="radio" name="contacttime" id="contacttime_one">
-            </p>
-            
-            <p>
-              <label for="contacttime_two">Afternoon</label>
-              <input type="radio" name="contacttime" id="contacttime_two">
-            </p>
-            
-            <p>
-              <label for="contacttime_three">Evening</label>
-              <input type="radio" name="contacttime" id="contacttime_three">
-            </p>
+          <p>
+            <label for="contacttime_one">Morning</label>
+            <input type="radio" name="contacttime" id="contacttime_one">
+          </p>
 
-            <p>
-              <label for="asap">ASAP</label>
-              <input type="checkbox" name="asap" id="asap">
-            </p>
-          </fieldset>
-          
-          <button type="submit">Send</button>
-        </form>
-      </section>
-    </main>
-  </body>
+          <p>
+            <label for="contacttime_two">Afternoon</label>
+            <input type="radio" name="contacttime" id="contacttime_two">
+          </p>
+
+          <p>
+            <label for="contacttime_three">Evening</label>
+            <input type="radio" name="contacttime" id="contacttime_three">
+          </p>
+
+          <p>
+            <label for="asap">ASAP</label>
+            <input type="checkbox" name="asap" id="asap">
+          </p>
+        </fieldset>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+</body>
+
 </html>
