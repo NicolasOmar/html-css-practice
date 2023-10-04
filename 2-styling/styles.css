@@ -1,0 +1,27 @@
+/*
+  A styling file has a set of styling ruleset by selectors
+  
+  - First you add the selector to change its style (before open its curly braces
+  - Then, you add the property and change in a name/value pair, this is also called a rule
+  - At last, you will write a list of rules inside a selector is a ruleset
+
+  p {
+    font-family: Roboto
+  }
+*/
+
+/* The '*' or 'universal' selector applies its styles to every elment in the browser */
+/*
+  * {
+    font-weight: bold;
+  }
+*/
+
+/*
+  The 'attribute' selector is used to be applied on those element which property has a specific value
+  - In case you want to select by a specific value, you can use something like [lang="es"], where is [variable=value]
+  - In case you sant to select those which have a token (string value) among all (like a class among several ones), use [class~="class-value"]
+*/
+[class~="resume-list"] {
+  font-style: italic;
+}

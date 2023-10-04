@@ -39,6 +39,8 @@ Until last version, it is no necesary.
   - Understanding and correct usage of the following elements: `aside`, `h`, `p`, `address`, `ul`, `ol`, `dt`, `table`, `main`, `em`, `strong`, `small`, `br`, `nav`, `form`, `input`, `text`, `radio`, `textarea`, `label`, `button`, `fieldset` and `legend`.
   - How to use url's framgments and HTML element `id` to create a navigation in the page
   - How to send form information to another page usgin http queries
+  - How to create and link a css file to format the page
+  - Understanding of `universal` and `attribute` selectors
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | Typescript |

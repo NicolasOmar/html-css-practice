@@ -17,8 +17,3 @@ For example: /search?q=html&page=3
 
 ---
 
-A styling file has a set of styling ruleset by selectors
-
-p { --> you add the selector to change its style
-  font-family: Roboto --> you add the property and change in a name/value pair, this is also called a rule
-} --> the list of rules inside a selector is a ruleset
