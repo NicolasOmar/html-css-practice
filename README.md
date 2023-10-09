@@ -41,6 +41,7 @@ Until last version, it is no necesary.
   - How to send form information to another page usgin http queries.
   - How to create and link a css file to format the page
   - Understanding of `universal`, `attribute`, `id` and `class` selectors.
+  - Understanding of `descendant`, `child`, `next sibiling` and `subsequent sibiling` combinators.
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | Typescript |

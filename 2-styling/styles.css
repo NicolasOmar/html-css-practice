@@ -54,11 +54,46 @@ ul.resume-list {
 */
 /*
   On this example, you can see that the selectors could be any valid type and can be grouped to apply the same styling
-  
+
   ul[lang], ol.resume-list, p {
     font-weight: bold;
   }
 */
 ul, ol {
   font-weight: bold;
+}
+
+/*
+  What is a combinator? Is a token that helps combining various selectors to get a more specific selection
+*/
+/*
+  A ' ' or 'descendant' combinator is used from right to left, taking as first point the element you are selecting and at its left, its ancestors
+  What it means is that it will select only those elements which ha a specific ancestor element
+*/
+blockquote p {
+  font-weight: bold;
+}
+
+/*
+  A '>' or 'child' combinator is used for direct children of the element you want to select
+  The main difference with desendant combinator is that a child is used for direct children (at 1 level) and not below that (where we use the other combinator)
+*/
+form > p {
+  font-weight: bold;
+}
+
+/*
+  A '+' or 'next sibiling' combinator is used for those element which are next to the one reffered (at the same tree level)
+  
+  On this case, you will only select the first blockquote element next to any h2, but it will not select other blockquotes
+
+  h2 + blockquote {
+    font-style: oblique;
+  }
+*/
+/*
+  A ~ or subsequent sibiling combinator is used to select all sibiling elements (defined at right) which are next to the other element (defined at left)
+*/
+h2 ~ blockquote {
+  font-style: oblique;
 }
