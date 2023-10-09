@@ -22,7 +22,7 @@ Repository created to record my practice learning HTML and CSS with exercises ba
 | `0.0.X` | How many times I have updated the next assignment/example |
 
 ## Requirements
-Until last version, none requirements
+Until last version, none are necesary.
 
 ## Setup
 Until last version, it is no necesary.
@@ -33,14 +33,14 @@ Until last version, it is no necesary.
 ## Repo structure & what i learned in each exercise
 - Side notes (in `notes.txt` file) for contextual comments outside the exercies
 - HTML document (`1-document` folder)
-  - Understanding about HTML main structural tags (`html`, `head` and `body`)
+  - Understanding about HTML main structural tags (`html`, `head` and `body`).
   - Understanding of metadata in tags such as `lang`
   - Usage of sectioning elements like `article` and `section`
   - Understanding and correct usage of the following elements: `aside`, `h`, `p`, `address`, `ul`, `ol`, `dt`, `table`, `main`, `em`, `strong`, `small`, `br`, `nav`, `form`, `input`, `text`, `radio`, `textarea`, `label`, `button`, `fieldset` and `legend`.
   - How to use url's framgments and HTML element `id` to create a navigation in the page
-  - How to send form information to another page usgin http queries
+  - How to send form information to another page usgin http queries.
   - How to create and link a css file to format the page
-  - Understanding of `universal` and `attribute` selectors
+  - Understanding of `universal`, `attribute`, `id` and `class` selectors.
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | Typescript |

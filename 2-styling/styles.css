@@ -10,6 +10,8 @@
   }
 */
 
+/* An important sidenote. Have in mind that all rules applied to selectors will also impact in its children elements */
+
 /* The '*' or 'universal' selector applies its styles to every elment in the browser */
 /*
   * {
@@ -18,10 +20,45 @@
 */
 
 /*
-  The 'attribute' selector is used to be applied on those element which property has a specific value
+  The 'attribute' selector is used to be applied on those elements which property has a specific value
   - In case you want to select by a specific value, you can use something like [lang="es"], where is [variable=value]
   - In case you sant to select those which have a token (string value) among all (like a class among several ones), use [class~="class-value"]
 */
-[class~="resume-list"] {
+/*
+  [class~="resume-list"] {
+    font-style: italic;
+  }
+*/
+
+/*
+  The '#' or 'id' selector is used to locate those elements with the specific id, you can use it like #id-value
+*/
+#skills {
+  font-weight: bold;
+}
+
+/*
+  A '.' or 'class' selector is a shortcut used to select elements with a specific class or list of classes using a dot after the element (or another class) and before the class you want to add
+
+  *.resume-list => all elements with 'resume-list' class
+
+  *.resume-list.skills => all elements with 'resume-list' and 'skill' class
+*/
+ul.resume-list {
   font-style: italic;
+}
+
+/*
+  ',' or 'groups of selectors' is used to apply in several elements by reducing duplicated code
+  If one of the grouped elements is invalid (is not an CSS rule or element), the rule will be disabled
+*/
+/*
+  On this example, you can see that the selectors could be any valid type and can be grouped to apply the same styling
+  
+  ul[lang], ol.resume-list, p {
+    font-weight: bold;
+  }
+*/
+ul, ol {
+  font-weight: bold;
 }

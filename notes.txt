@@ -1,4 +1,4 @@
-Check https://html.spec.whatwg.org/ for specs information (should be your base)
+Check https://html.spec.whatwg.org/ for HTML specs information (should be your base)
 
 When you want to build your sections (starting from document's body and its children), you should think about how other tools will read your structure and create a table of contents based on mentioned section structure (which will look like an inverted tree)
 
@@ -17,3 +17,6 @@ For example: /search?q=html&page=3
 
 ---
 
+Check https://www.w3.org/Style/CSS/ for CSS specs
+
+UA: User Agent
