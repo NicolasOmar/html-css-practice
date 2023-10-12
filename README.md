@@ -42,6 +42,8 @@ Until last version, it is no necesary.
   - How to create and link a css file to format the page
   - Understanding of `universal`, `attribute`, `id` and `class` selectors.
   - Understanding of `descendant`, `child`, `next sibiling` and `subsequent sibiling` combinators.
+  - Understanding of pseudo classes like `nth-child`, `nth-of-type`, `visited`, `focus`, `hover`
+  - Understanding of pseudo elements like `first-letter`
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | Typescript |

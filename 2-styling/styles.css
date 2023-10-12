@@ -33,9 +33,9 @@
 /*
   The '#' or 'id' selector is used to locate those elements with the specific id, you can use it like #id-value
 */
-#skills {
+/* #skills {
   font-weight: bold;
-}
+} */
 
 /*
   A '.' or 'class' selector is a shortcut used to select elements with a specific class or list of classes using a dot after the element (or another class) and before the class you want to add
@@ -96,4 +96,66 @@ form > p {
 */
 h2 ~ blockquote {
   font-style: oblique;
+}
+
+/*
+  'Pseudo Class' is a selection based on information related outside the document tree
+  
+  A 'child-indexed' pseudo class are the ones which select elements based on their index amongst their inclusive siblings
+  On the case of 'nth-child(An+B)', the arguments are the following
+  - Select the elements reffered by groups of A (in number)
+  - Set in +B Which one is selected of the groups
+  - In the following example you will want to select the first element of groups of 2
+  - You can also make a shortcut of select the odd or event element of a list, like ':nth-child(odd)'
+*/
+/*
+  li:nth-child(2n+1) {
+    color: red;
+  }
+*/
+
+/*
+  'nth-of-type' is similar to previous rule because is using the same type of arguments, but it checks on the selected elements, but does not work on its children, but in the element/s itself
+*/
+/*
+  #aboutme p:nth-of-type(odd) {
+    color: blue;
+  }
+*/
+
+/*
+  Location pseudo classes, based on links (like its status)
+  - 'visited' is used to mark when a link has been visited
+  - 'focus' is used when a link is been focused by the page (like when you tab to select a specific element only using your keyboard)
+  - 'hover' is used when your the user hover its pointer to a 
+*/
+/*
+  a:visited,
+  a:focus,
+  a:hover {
+    color: red;
+  }
+
+  input:focus,
+  select:focus {
+    outline: 2px solid red;
+  }
+*/
+
+/*
+  ':not' or 'negation matcher' is used to search for those elements which ARE NOT related to the search parameter you add between parenthesis
+*/
+/*
+  section:not(#testimonials) {
+    font-style: italic;
+  }
+*/
+
+/*
+  Pseudo elements is reffered abstract elements of the documents that are not restricted to fitting into the document tree structure
+  A thing to have in mind, its sintaxis uses two colons (::) instead one (:) like are used in pseudo classes.
+  - first-letter selects just the first letter on the element you reffered before
+*/
+p::first-letter {
+  font-weight: bolder;
 }
