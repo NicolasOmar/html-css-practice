@@ -41,7 +41,7 @@
         <a href="#portfolio">Portfolio</a>
       </li>
       <li>
-        <a href="#testimonals">Testimonials</a>
+        <a href="#testimonials">Testimonials</a>
       </li>
       <li>
         <a href="#mailingaddress">Miling Address</a>
@@ -54,11 +54,11 @@
   <!-- A <main> components reffers to the dominant part of a document and it can only be one per document (actually can be more than one, but the rest should been hidden from the one is shown) -->
   <main>
     <!--
-        - The <h> tags use phrasing content, which reffers for text
-        - Represent the heading of a section
-        - The element has a rank from the lesser number (highest raking) to the biggest (lowest raking) = [<h1> > <h2> > <h3> > <h4> > <h5> > <h6>]
-        - If you have more than 1 element with same raking, it marks 2 different sections
-      -->
+      - The <h> tags use phrasing content, which reffers for text
+      - Represent the heading of a section
+      - The element has a rank from the lesser number (highest raking) to the biggest (lowest raking) = [<h1> > <h2> > <h3> > <h4> > <h5> > <h6>]
+      - If you have more than 1 element with same raking, it marks 2 different sections
+    -->
     <h1>Resume</h1>
 
     <!-- Each <section> is a generic section of a document, should be related in a thematic way, makes sense to be part of the same section element -->
@@ -97,7 +97,7 @@
         <!-- The <em> element stress emphasis of its content, changes the meaning of a sentence -->
         <!-- The <small> element express a side comment that has its importance but you want to reduce its size -->
         Hi! I'm John Doe and I'm <em>happy</em> to have you as a reviewer in my repo.
-      <aside><small>As Anthony Alicea said. Don't imitate, understand!</small></aside>
+        <aside><small>As Anthony Alicea said. Don't imitate, understand!</small></aside>
       </p>
       <!-- The <footer> represetnt the footer (lowest element) of its nearest ancestor section component (in this case, the header), used to contain author info or bervose agreement details as example -->
       <footer>
@@ -108,13 +108,13 @@
     <section id="services">
       <h2>Services</h2>
       <!--
-          When you want to make a list of thing where the order is not important, use <ul>
-          Each <li> represents an item
-        -->
+        When you want to make a list of thing where the order is not important, use <ul>
+        Each <li> represents an item
+      -->
       <!--
-          On a ordered list, you have some more ways to cutomize it
-          reversed is a boolean work that will reverse the order of the items from descendint to ascendint (from 1, 2, 3 to 3, 2, 1)
-        -->
+        On a ordered list, you have some more ways to cutomize it
+        reversed is a boolean work that will reverse the order of the items from descendint to ascendint (from 1, 2, 3 to 3, 2, 1)
+      -->
       <ul>
         <li>Web Development</li>
         <li>App Development</li>
@@ -142,11 +142,11 @@
     <section id="workhistory">
       <h2>Work History</h2>
       <!--
-          When you have information that can be understood as tabular data (a set of values and names that you want to compare in a different way), you have the <table> component that divides its information in 3 sections: <thead> (header), <tbody> (body) and <tfoot> (footer)
-          - thead is where the heads of each row will be places
-          - tbody is where you have a set of tr (or table rows) where each one has an amount of td (or table cells) equivalent to the numbers of rows setted on the header
-          - tfoot is where the user will want to see summray data, that can be showed as is wanted.
-        -->
+        When you have information that can be understood as tabular data (a set of values and names that you want to compare in a different way), you have the <table> component that divides its information in 3 sections: <thead> (header), <tbody> (body) and <tfoot> (footer)
+        - thead is where the heads of each row will be places
+        - tbody is where you have a set of tr (or table rows) where each one has an amount of td (or table cells) equivalent to the numbers of rows setted on the header
+        - tfoot is where the user will want to see summray data, that can be showed as is wanted.
+      -->
       <table>
         <thead>
           <tr>
@@ -185,12 +185,12 @@
       <h2>Portfolio</h2>
     </section>
 
-    <section id="testimonals">
+    <section id="testimonials">
       <h2>Testimonials</h2>
       <!--
-          When you want to write a quote, its best practice is to avoid putting raw text without any element
-          A element as a parapgraph <p> will give better context of when a text is part of the quote or nor (in negative case, when you add quoter's name outside quote itself)
-        -->
+        When you want to write a quote, its best practice is to avoid putting raw text without any element
+        A element as a parapgraph <p> will give better context of when a text is part of the quote or nor (in negative case, when you add quoter's name outside quote itself)
+      -->
       <blockquote>
         <p>I love Tony's courses!</p>
       </blockquote>
@@ -218,10 +218,10 @@
           <!-- <label> tag is used mostly to show info to the user, it relates with the input id you assign for=[field_id] -->
           <label for="name">Name</label>
           <!--
-              <input> tag has a lot of properties to adapt into user's need,
-              But to improve autocompletion, first you have to add the [autocomplete] property
-              And after that, include its name, which will be used by user agent in order to provide the related values added by the user in previous forms
-            -->
+            <input> tag has a lot of properties to adapt into user's need,
+            But to improve autocompletion, first you have to add the [autocomplete] property
+            And after that, include its name, which will be used by user agent in order to provide the related values added by the user in previous forms
+          -->
           <input type="text" name="name" id="name" autocomplete required />
         </p>
 
@@ -245,10 +245,10 @@
         </p>
 
         <!--
-            A good visual and code interpretaiton of grouping several inputs/controls in a form is using a <fieldset> tag
-            The tag will draw a box to wrap all mentioned children inputs
-            A good addition to that form is the <legend> tag, which will work as box title to reference the children inputs
-          -->
+          A good visual and code interpretaiton of grouping several inputs/controls in a form is using a <fieldset> tag
+          The tag will draw a box to wrap all mentioned children inputs
+          A good addition to that form is the <legend> tag, which will work as box title to reference the children inputs
+        -->
         <fieldset>
           <legend>Best Contact Time</legend>
 

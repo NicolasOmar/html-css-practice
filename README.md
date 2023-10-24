@@ -44,6 +44,7 @@ Until last version, it is no necesary.
   - Understanding of `descendant`, `child`, `next sibiling` and `subsequent sibiling` combinators.
   - Understanding of pseudo classes like `nth-child`, `nth-of-type`, `visited`, `focus`, `hover`
   - Understanding of pseudo elements like `first-letter`
+  - Understanding of absolute (like `px`) and relative units (like `rem`)
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | Typescript |
