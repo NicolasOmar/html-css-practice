@@ -20,3 +20,8 @@ For example: /search?q=html&page=3
 Check https://www.w3.org/Style/CSS/ for CSS specs
 
 UA: User Agent
+
+Layout: Decide where the contet will go in a page/site
+Painting: Display the mentioned content (on the Layout) by the UA
+
+Box Model: Idea every element in the structure tree draws a box
