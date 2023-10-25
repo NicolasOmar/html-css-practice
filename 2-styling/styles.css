@@ -180,6 +180,25 @@
 
 body {
   font-size: 16px;
+  /* --- COMMENTS FOR PROPERTY UNDERSTANDING ONLY --- */
+  /*
+    When the UA is rendering the page in a language like english, the process starts first in inline mode until the UA has no more width and has to work on another block
+    That is called a 'writing mode', which to be modified, has to be done in the body element
+  */
+  /* writing-mode: vertical-rl; */
+
+  /* 
+    Also, you can adjust text direction only with 'direction' property
+  */
+  /* direction: rtl; */
+
+  /*
+    In case you want to work certain languages those texts are oriented in a different way, you can enhance the writing mode with another property like 'text-orientation'
+  */
+  /*
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+  */
 }
 
 /*
@@ -187,39 +206,9 @@ body {
 */
 nav {
   position: sticky;
-  top: 0;
-}
-
-main {
-  max-width: 700px;
-  padding: 0 2rem;
-  border-left: solid 2px black;
-  border-right: solid 2px black;
-}
-
-#testimonials blockquote {
-  border: solid 1px black;
-  padding: 0 0.5rem;
-  margin: 0.5rem 0;
-}
-
-/*
-  - Display property is about how an element generates boxes-like blocks,
-  - Its outer display is about how they affect other boxes adjacent to the one
-  - On its cases the margin between both sibilings will collapse even if they have different margins one against the other, will prevale the larger value
-*/
-.label-standard {
-  display: block;
-  margin: 0 0.125rem;
-}
-
-/*
-  Float makes the element out of flow, moves it to a side of parent box, but is an outdated property which can be replaces
-*/
-.personal-resume-picture {
-  float: left;
-  max-width: 75px;
-  margin-right: 1rem;
+  inset-inline-start: 0;
+  background-color: white;
+  text-align: center;
 }
 
 /*
@@ -231,5 +220,56 @@ main {
 nav li {
   display: inline;
   margin: 0 0.25rem;
+  /* Those properties which ends with '-inline' or '-block' are logical properties, useful for multilingual sites (and achieve a consistent experience no matter the language) */
+  margin-inline: .25rem;
+  margin-block: 0;
   line-height: 1.5rem;
+}
+
+main {
+  max-inline-size: clamp(700px, 50%, 900px);
+  padding-inline: 2rem;
+  padding-block: 0;
+  border-inline-left: solid 2px black;
+  border-inline-right: solid 2px black;
+  margin-inline: auto;
+  margin-block: 0;
+}
+
+#testimonials blockquote {
+  border-inline: solid 1px black;
+  border-block: solid 1px black;
+  padding-inline: 0.5rem;
+  padding-block: 0;
+  margin-inline: 0;
+  margin-block: 0.5rem;
+}
+
+/*
+  - Display property is about how an element generates boxes-like blocks,
+  - Its outer display is about how they affect other boxes adjacent to the one
+  - On its cases the margin between both sibilings will collapse even if they have different margins one against the other, will prevale the larger value
+*/
+.label-standard {
+  display: block;
+  margin-inline: 0.125rem;
+  margin-block: 0.125rem;
+}
+
+/*
+  Using flow-root, it will behaive like a single block, treating each one of its child elements as block elements, useful resource for cases where you have a float image which overlaps its container (in this case, the #aboutme)
+*/
+#aboutme {
+  background-color: black;
+  color: white;
+  display: flow-root;
+}
+
+/*
+  Float makes the element out of flow, moves it to a side of parent box, but is an outdated property which can be replaces
+*/
+.personal-resume-picture {
+  float: inline-start;
+  max-inline-size: 75px;
+  margin-inline-end: 1rem;
 }

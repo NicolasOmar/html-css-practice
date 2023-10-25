@@ -47,6 +47,9 @@ Until last version, it is no necesary.
   - Understanding of absolute (like `px`) and relative units (like `rem`)
   - Understanding of element `position`.
   - Understanding of display values (like `block` and `inline`) and `float`
+  - Understanding of multilingual sites support
+    - `writing mode`, `direction` and `text-orientation` features
+    - `-inline` or `-block` properties
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | Typescript |
