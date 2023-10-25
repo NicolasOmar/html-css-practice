@@ -202,3 +202,34 @@ main {
   padding: 0 0.5rem;
   margin: 0.5rem 0;
 }
+
+/*
+  - Display property is about how an element generates boxes-like blocks,
+  - Its outer display is about how they affect other boxes adjacent to the one
+  - On its cases the margin between both sibilings will collapse even if they have different margins one against the other, will prevale the larger value
+*/
+.label-standard {
+  display: block;
+  margin: 0 0.125rem;
+}
+
+/*
+  Float makes the element out of flow, moves it to a side of parent box, but is an outdated property which can be replaces
+*/
+.personal-resume-picture {
+  float: left;
+  max-width: 75px;
+  margin-right: 1rem;
+}
+
+/*
+  Inline display workd different because of some different rules
+  - The block around inline elements is drawn by the layout engine, which will be affected by the parent block (which contains them) and float elements next to the group
+  - Container's height can be modified with 'line-height' property, its default value is content's height
+  - Also, you can set inline content vertical align with 'vertical-align' property
+*/
+nav li {
+  display: inline;
+  margin: 0 0.25rem;
+  line-height: 1.5rem;
+}

@@ -45,7 +45,8 @@ Until last version, it is no necesary.
   - Understanding of pseudo classes like `nth-child`, `nth-of-type`, `visited`, `focus`, `hover`
   - Understanding of pseudo elements like `first-letter`
   - Understanding of absolute (like `px`) and relative units (like `rem`)
-  - Understanding of positions.
+  - Understanding of element `position`.
+  - Understanding of display values (like `block` and `inline`) and `float`
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | Typescript |

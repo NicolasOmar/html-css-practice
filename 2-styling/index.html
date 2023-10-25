@@ -58,7 +58,7 @@
         - If you have more than 1 element with same raking, it marks 2 different sections
       -->
       <h1>Resume</h1>
-      
+
       <!-- Each <section> is a generic section of a document, should be related in a thematic way, makes sense to be part of the same section element -->
       <section>
         <h2>John Doe</h2>
@@ -83,45 +83,42 @@
           </dl>
         </address>
       </section>
-      
+
       <!-- this is a part of the document and it is self contained (because of the content)-->
       <article id="aboutme">
         <!-- The <header> is used to container a content that will be shown as header of a section element -->
         <header>
           <h2>About Me</h2>
         </header>
-        <!-- The <em> element stress emphasis of its content, changes the meaning of a sentence -->
-        <p>
-          Hi! I'm John Doe and I'm <em>happy</em> to have you as a reviewer in my repo.
-        </p>
+        <img class="personal-resume-picture" src="./john-doe.jpg" alt="My image" title="My Image">
         <!-- An <aside> is a type of section for tangencial content that is at the side of the main content, it means is part of the section, but its another type of content -->
-        <aside>
+        <p>
+          <!-- The <em> element stress emphasis of its content, changes the meaning of a sentence -->
           <!-- The <small> element express a side comment that has its importance but you want to reduce its size -->
-          <small>As Anthony Alicea said. Don't imitate, understand!</small>
-        </aside>
+          Hi! I'm John Doe and I'm <em>happy</em> to have you as a reviewer in my repo.
+        <aside><small>As Anthony Alicea said. Don't imitate, understand!</small></aside>
+        </p>
         <!-- The <footer> represetnt the footer (lowest element) of its nearest ancestor section component (in this case, the header), used to contain author info or bervose agreement details as example -->
         <footer>
           Contact Me
         </footer>
       </article>
-      
+
       <section id="services">
         <h2>Services</h2>
         <!--
-          When you want to make a list of thing where the order is not important, use <ul>
-          Each <li> represents an item
+          - When you want to make a list of thing where the order is not important, use <ul>
+          - Each <li> represents an item
+          - On a ordered list, you have some more ways to cutomize it
+          - reversed is a boolean work that will reverse the order of the items from descendint to ascendint (from 1, 2, 3 to 3, 2, 1)
         -->
-        <!--
-          On a ordered list, you have some more ways to cutomize it
-          reversed is a boolean work that will reverse the order of the items from descendint to ascendint (from 1, 2, 3 to 3, 2, 1)
-        -->
-        <ul class="resume-list">
+        <ul>
           <li>Web Development</li>
           <li>App Development</li>
           <li>Training</li>
         </ul>
       </section>
-      
+
       <section id="skills">
         <h2>Skills</h2>
         <ol>
@@ -139,7 +136,7 @@
           </li>
         </ol>
       </section>
-      
+
       <section id="workhistory">
         <h2>Work History</h2>
         <!--
@@ -181,11 +178,11 @@
           </tfoot>
         </table>
       </section>
-      
+
       <section id="portfolio">
         <h2>Portfolio</h2>
       </section>
-      
+
       <section id="testimonials">
         <h2>Testimonials</h2>
         <!--
@@ -193,7 +190,6 @@
           A element as a parapgraph <p> will give better context of when a text is part of the quote or nor (in negative case, when you add quoter's name outside quote itself)
         -->
         <blockquote>
-          <!-- Each paragraph represents one or more sentences that discuss a particular topic-->
           <p>I love Tony's courses!</p>
         </blockquote>
         <blockquote>
@@ -201,7 +197,7 @@
           <p>Tony's courses <strong>helped me get a job.</strong></p>
         </blockquote>
       </section>
-      
+
       <section id="mailingaddress">
         <h2>Mailing Address</h2>
         <!-- A <br> makes a line break when you want to set it in a text of several pieces but they have to be together into the same tag (like tese address lines) -->
@@ -218,7 +214,7 @@
           <!-- In order to make a vertical-formatted form, is good to wrap every label/input pair into a <p> tag to mark a section on the form-->
           <p>
             <!-- <label> tag is used mostly to show info to the user, it relates with the input id you assign for=[field_id] -->
-            <label for="name">Name</label>
+            <label class="label-standard" for="name">Name</label>
             <!--
               <input> tag has a lot of properties to adapt into user's need,
               But to improve autocompletion, first you have to add the [autocomplete] property
@@ -228,13 +224,13 @@
           </p>
 
           <p>
-            <label for="email">Email</label>
+            <label class="label-standard" for="email">Email</label>
             <!-- The [required] property is a boolean that force user to put infomration on mentioned input -->
             <input type="email" name="email" id="email" autocomplete required />
           </p>
 
           <p>
-            <label for="whycontacting">Why contact me?</label>
+            <label class="label-standard" for="whycontacting">Why contact me?</label>
             <select name="whycontacting" id="whycontacting">
               <option value="needcontractor">Need a contractor</option>
               <option value="requestbudget">Request a budget</option>
@@ -242,7 +238,7 @@
           </p>
 
           <p>
-            <label for="comments">Comments</label>
+            <label class="label-standard" for="comments">Comments</label>
             <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
           </p>
 
@@ -255,26 +251,26 @@
             <legend>Best Contact Time</legend>
 
             <p>
-              <label for="contacttime_one">Morning</label>
+              <label class="label-standard" for="contacttime_one">Morning</label>
               <input type="radio" name="contacttime" id="contacttime_one">
             </p>
-            
+
             <p>
-              <label for="contacttime_two">Afternoon</label>
+              <label class="label-standard" for="contacttime_two">Afternoon</label>
               <input type="radio" name="contacttime" id="contacttime_two">
             </p>
-            
+
             <p>
-              <label for="contacttime_three">Evening</label>
+              <label class="label-standard" for="contacttime_three">Evening</label>
               <input type="radio" name="contacttime" id="contacttime_three">
             </p>
 
             <p>
-              <label for="asap">ASAP</label>
+              <label class="label-standard" for="asap">ASAP</label>
               <input type="checkbox" name="asap" id="asap">
             </p>
           </fieldset>
-          
+
           <button type="submit">Send</button>
         </form>
       </section>
