@@ -25,3 +25,14 @@ Layout: Decide where the contet will go in a page/site
 Painting: Display the mentioned content (on the Layout) by the UA
 
 Box Model: Idea every element in the structure tree draws a box
+
+Before Flexbox, you had a hierarchy related element position, first you see them in inline and then change to block mode
+
+With flexbox you start to see in main mode and cross after
+Respects the writing mode in a more natural way,
+
+outer display type is block, (the container) interacts with other elements has a block element
+
+inner display type is flex, they become flex items
+
+Main flex advantage related to multicultural support, giving chance to avoid verbose code to adapt on any situation

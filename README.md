@@ -39,6 +39,7 @@ Until last version, it is no necesary.
   - Understanding and correct usage of the following elements: `aside`, `h`, `p`, `address`, `ul`, `ol`, `dt`, `table`, `main`, `em`, `strong`, `small`, `br`, `nav`, `form`, `input`, `text`, `radio`, `textarea`, `label`, `button`, `fieldset` and `legend`.
   - How to use url's framgments and HTML element `id` to create a navigation in the page
   - How to send form information to another page usgin http queries.
+- CSS document (`2-styling` folder)
   - How to create and link a css file to format the page
   - Understanding of `universal`, `attribute`, `id` and `class` selectors.
   - Understanding of `descendant`, `child`, `next sibiling` and `subsequent sibiling` combinators.
@@ -46,10 +47,12 @@ Until last version, it is no necesary.
   - Understanding of pseudo elements like `first-letter`
   - Understanding of absolute (like `px`) and relative units (like `rem`)
   - Understanding of element `position`.
-  - Understanding of display values (like `block` and `inline`) and `float`
-  - Understanding of multilingual sites support
+  - Understanding of display values (like `block`, `flow-root` and `inline`) and `float`
+  - Understanding of `overflow`
+  - Understanding of multilingual sites support using:
     - `writing mode`, `direction` and `text-orientation` features
     - `-inline` or `-block` properties
+  - Understanding about `Flex Layout/Flexbox` with properties like `flex-direction`, `order` and `flex-wrap`
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | Typescript |

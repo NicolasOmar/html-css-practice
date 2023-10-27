@@ -273,3 +273,9 @@ main {
   max-inline-size: 75px;
   margin-inline-end: 1rem;
 }
+
+/*
+  When you want to hide a element from the DOM, you have two options
+  - Use hidden, which will laid the element out and its respective size will be rendered on the DOM, just not painted (it will be present on the DOM tree).
+  - Use none to exclude the element from the render tree (it will even be out of the DOM tree)
+*/
