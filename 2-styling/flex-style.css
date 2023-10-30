@@ -201,17 +201,27 @@ body {
   */
 }
 
-/*
-  The sticky position makes a difference among other possible values, it renders outside common flow and is put even above its next sibilings, like overwritem them
-*/
 nav {
+  /*
+    The sticky position makes a difference among other possible values, it renders outside common flow and is put even above its next sibilings, like overwritem them
+  */
   position: sticky;
-  inset-inline-start: 0;
   background-color: white;
+  display: flex;
+  /*
+    For content/elements aligment, they can be aligned with respect to their container o each other
+    - 'justify-content' is to align in the horizontal axis
+    - 'align-items' is to align all items in a container in the vertical axis
+    - 'align-self' is for self element vertical align
+  */
+  justify-content: center;
 }
 
 nav ul {
-  display: flex;
+  /*
+    Inline flex, outher display type is inline and the inner display is flex
+  */
+  display: inline-flex;
   flex-wrap: wrap;
 }
 
@@ -256,7 +266,8 @@ main {
   color: white;
   display: flex;
   /* Overflow is useful when your element's content is to big for a specific screen size (in cases of resizes too)*/
-  overflow: auto;
+  /* overflow: auto; */
+  flex-wrap: wrap;
 }
   
 /*
