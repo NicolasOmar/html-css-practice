@@ -52,7 +52,7 @@ Until last version, it is no necesary.
   - Understanding of multilingual sites support using:
     - `writing mode`, `direction` and `text-orientation` features
     - `-inline` or `-block` properties
-  - Understanding about `Flex Layout/Flexbox` with properties like `flex-direction`, `order` and `flex-wrap`
+  - Understanding about `Flex Layout/Flexbox` with properties like `flex-direction`, `order`, `flex-wrap`, `flex-grow`, `flex-shrink`, `flex-basis`
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | Typescript |

@@ -271,9 +271,16 @@ main {
 #testimonials {
   display: flex;
   /* Testimonial elements now will be oriented as a row in a inverse way */
-  flex-direction: row-reverse;
+  /* flex-direction: row-reverse; */
+  flex-direction: row;
   /* Flex alternative to overflow could be flex-wrap, where the element can be relocated following flex layout and avoid interface problems */
   flex-wrap: wrap;
+}
+
+.flex-header, .motto {
+  /* 'flex-grow' is a numeric value that will take a percentage of positive free space to be relocated based on that space */
+  /* 'flex-shrink' is the inverse usage of 'flex-grow', where it will take a part of the space and reduce its size */
+  flex-basis: 100%;
 }
 
 #testimonials blockquote {
@@ -288,6 +295,18 @@ main {
 .personal-resume-picture {
   max-inline-size: 75px;
   margin-inline-end: 1rem;
+}
+
+blockquote.featured {
+  /*
+    A shorthand in flex can be used to handle several properties of flex
+    - With 1 number only, it will be 'flex-grow'
+    - With a size only (like % or em), it will be 'flex-basis'
+    - With a number and a size, it will be 'grow' and 'basis'
+    - With 2 numbers it will be 'grow' and 'shrink'
+    - And finally, the full shorthand will be 'flex-grow', 'flex-shrink' and 'flex-basis'
+  */
+  flex: 1 0 auto;
 }
 
 /*

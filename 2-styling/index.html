@@ -92,17 +92,21 @@
       <!-- this is a part of the document and it is self contained (because of the content)-->
       <article id="aboutme">
         <!-- The <header> is used to container a content that will be shown as header of a section element -->
-        <header>
+        <header class="flex-header">
           <h2>About Me</h2>
         </header>
         <img class="personal-resume-picture" src="./john-doe.jpg" alt="My image" title="My Image">
-        <!-- An <aside> is a type of section for tangencial content that is at the side of the main content, it means is part of the section, but its another type of content -->
+        <!-- The <em> element stress emphasis of its content, changes the meaning of a sentence -->
+        <!-- The <small> element express a side comment that has its importance but you want to reduce its size -->
         <p>
-          <!-- The <em> element stress emphasis of its content, changes the meaning of a sentence -->
-          <!-- The <small> element express a side comment that has its importance but you want to reduce its size -->
           Hi! I'm John Doe and I'm <em>happy</em> to have you as a reviewer in my repo.
-        <aside><small>As Anthony Alicea said. Don't imitate, understand!</small></aside>
         </p>
+        <!-- An <aside> is a type of section for tangencial content that is at the side of the main content, it means is part of the section, but its another type of content -->
+        <aside class="motto">
+          <p>
+            <small>As Anthony Alicea said. Don't imitate, understand!</small>
+          </p>
+        </aside>
         <!-- The <footer> represetnt the footer (lowest element) of its nearest ancestor section component (in this case, the header), used to contain author info or bervose agreement details as example -->
         <footer>
           Contact Me
@@ -189,13 +193,16 @@
       </section>
 
       <section id="testimonials">
-        <h2>Testimonials</h2>
+        <h2 class="flex-header">Testimonials</h2>
         <!--
           When you want to write a quote, its best practice is to avoid putting raw text without any element
           A element as a parapgraph <p> will give better context of when a text is part of the quote or nor (in negative case, when you add quoter's name outside quote itself)
         -->
         <blockquote>
           <p>I love Tony's courses!</p>
+        </blockquote>
+        <blockquote class="featured">
+          <p>I love learning about HTML & CSS!</p>
         </blockquote>
         <blockquote>
           <!-- The <strong> element indicates when a text shows importance, seriouness or urgency for its content -->
