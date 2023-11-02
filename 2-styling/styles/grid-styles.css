@@ -208,6 +208,7 @@ body {
 h1, h2 {
   /* On font-family, we can set a series of fonts in case the one before is not finded (as replacements) */
   font-family: 'Montserrat', sans-serif;
+  color: #3D3D3D;
 }
 
 input, select, textarea {
@@ -254,13 +255,18 @@ nav ul li {
 }
 
 main {
+  display: grid;
+  row-gap: 20px;
   max-inline-size: clamp(700px, 50%, 900px);
   padding-inline: 2rem;
   padding-block: 0;
-  border-inline-left: solid 2px black;
-  border-inline-right: solid 2px black;
   margin-inline: auto;
   margin-block: 0;
+  /* In case you want to add an image to the site, you use background-image, and to set its size related to its container, you set them with background-size */
+  /*
+    background-image: url(../img/codeImage.jpg);
+    background-size: contain;
+  */
 }
 
 /*
@@ -276,11 +282,16 @@ main {
 
 #aboutme {
   background-color: black;
+  /* On this specific case, if you leave this color in the section, it will be inherit on its children, but it will be replaced when appears other color rule reffering any of its children (like the h1, h2 rule) */
   color: white;
   display: flex;
   /* Overflow is useful when your element's content is to big for a specific screen size (in cases of resizes too)*/
   /* overflow: auto; */
   flex-wrap: wrap;
+}
+
+#aboutme h2 {
+  color: white;
 }
   
 /*
@@ -313,6 +324,18 @@ main {
   */
   align-items: center;
   justify-items: center;
+  /*
+    For color setting, you can use the common words like white or black, but in case you want to add some opacity, you should use another variant like rgba
+  */
+  /* background-color: #F74D65; */
+  /*
+    In rgba, the arguments stand for:
+    - Red (in base of 2)
+    - Green (in base of 2)
+    - Blue (in base of 2)
+    - Opacity
+  */
+  background-color: rgba(247, 77, 101, 0.9);
 }
 
 #portfolio img {
