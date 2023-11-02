@@ -23,8 +23,8 @@ After finishing its related Udemy course, I archive this repository and unarchiv
 Just in case you want to make your own version with specific releases and version updates.
 After cloning the repo, go to the created folder and install the node packages.
 ```sh
-git clone https://github.com/NicolasOmar/html-practice.git
-cd html-practice
+git clone https://github.com/NicolasOmar/html-css-practice.git
+cd html-css-practice
 npm install
 ```
 
