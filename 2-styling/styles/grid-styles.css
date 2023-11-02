@@ -297,11 +297,18 @@ main {
 /*
   In case you want to set a specific element visually among others (overwriting the common order), you can set a numeric value to [order]
 */
-/*
-  #aboutme aside {
-    order: 10;
-  }
-*/
+#aboutme aside {
+  /* order: 10; */
+  text-align: center;
+}
+
+#aboutme footer {
+  text-align: center;
+}
+
+#aboutme footer a, #aboutme footer a:visited#aboutme footer a:hover {
+  color: white;
+}
 
 #portfolio {
   display: grid;
@@ -343,6 +350,13 @@ main {
   max-inline-size: 100%;
 }
 
+#portfolio img:hover {
+  /* Opacity has the same usage than the one seen in rgba, but for this case, it will only affect element's opacity, not color */
+  opacity: 0.7;
+  /* Transition helps to modify certain element properties (like opacity) for a designated time */
+  transition: opacity 1s;
+}
+
 #testimonials {
   display: flex;
   /* Testimonial elements now will be oriented as a row in a inverse way */
@@ -382,6 +396,9 @@ blockquote.featured {
     - And finally, the full shorthand will be 'flex-grow', 'flex-shrink' and 'flex-basis'
   */
   flex: 1 0 auto;
+  background-color: black;
+  color: white;
+  font-weight: bold;
 }
 
 /*
@@ -389,3 +406,17 @@ blockquote.featured {
   - Use hidden, which will laid the element out and its respective size will be rendered on the DOM, just not painted (it will be present on the DOM tree).
   - Use none to exclude the element from the render tree (it will even be out of the DOM tree)
 */
+
+/* This implementations of media queries are used as breakpoints, where the setted rules below will be used when user's screen has a width up to 767px */
+@media screen and (max-width: 767.98px) {
+  #aboutme {
+    justify-content: center;
+    text-align: center;
+  }
+
+  #portfolio {
+    grid-template: 1fr / 1fr 1fr;
+  }
+}
+
+/* @media screen and (min-width: 1200px) {} */

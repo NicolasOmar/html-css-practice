@@ -36,3 +36,5 @@ outer display type is block, (the container) interacts with other elements has a
 inner display type is flex, they become flex items
 
 Main flex advantage related to multicultural support, giving chance to avoid verbose code to adapt on any situation
+
+Media queries can be used for specific situations rather screen (for view the site on a screen), like print (in case you need for printing scenarios only)
