@@ -1,4 +1,4 @@
-Check https://html.spec.whatwg.org/ for specs information (should be your base)
+Check https://html.spec.whatwg.org/ for HTML specs information (should be your base)
 
 When you want to build your sections (starting from document's body and its children), you should think about how other tools will read your structure and create a table of contents based on mentioned section structure (which will look like an inverted tree)
 
@@ -12,5 +12,29 @@ To check if a tag can be used inside another (due the combination), check the HT
 
 Protocol: A system of rules for two entities to communicate => How do we transfer that text from one computer to another?
 
-Querystring, name/value pair string separated by unpersand (&)
+Querystring: name/value pair string separated by unpersand (&)
 For example: /search?q=html&page=3
+
+---
+
+Check https://www.w3.org/Style/CSS/ for CSS specs
+
+UA: User Agent
+
+Layout: Decide where the contet will go in a page/site
+Painting: Display the mentioned content (on the Layout) by the UA
+
+Box Model: Idea every element in the structure tree draws a box
+
+Before Flexbox, you had a hierarchy related element position, first you see them in inline and then change to block mode
+
+With flexbox you start to see in main mode and cross after
+Respects the writing mode in a more natural way,
+
+outer display type is block, (the container) interacts with other elements has a block element
+
+inner display type is flex, they become flex items
+
+Main flex advantage related to multicultural support, giving chance to avoid verbose code to adapt on any situation
+
+Media queries can be used for specific situations rather screen (for view the site on a screen), like print (in case you need for printing scenarios only)

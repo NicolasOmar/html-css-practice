@@ -1,0 +1,422 @@
+/*
+  A styling file has a set of styling ruleset by selectors
+  
+  - First you add the selector to change its style (before open its curly braces
+  - Then, you add the property and change in a name/value pair, this is also called a rule
+  - At last, you will write a list of rules inside a selector is a ruleset
+
+  p {
+    font-family: Roboto
+  }
+*/
+
+/* An important sidenote. Have in mind that all rules applied to selectors will also impact in its children elements */
+
+/* The '*' or 'universal' selector applies its styles to every elment in the browser */
+/*
+  * {
+    font-weight: bold;
+  }
+*/
+
+/*
+  The 'attribute' selector is used to be applied on those elements which property has a specific value
+  - In case you want to select by a specific value, you can use something like [lang="es"], where is [variable=value]
+  - In case you sant to select those which have a token (string value) among all (like a class among several ones), use [class~="class-value"]
+*/
+/*
+  [class~="resume-list"] {
+    font-style: italic;
+  }
+*/
+
+/*
+  The '#' or 'id' selector is used to locate those elements with the specific id, you can use it like #id-value
+*/
+/* #skills {
+  font-weight: bold;
+} */
+
+/*
+  A '.' or 'class' selector is a shortcut used to select elements with a specific class or list of classes using a dot after the element (or another class) and before the class you want to add
+
+  *.resume-list => all elements with 'resume-list' class
+
+  *.resume-list.skills => all elements with 'resume-list' and 'skill' class
+*/
+/* ul.resume-list {
+  font-style: italic;
+} */
+
+/*
+  ',' or 'groups of selectors' is used to apply in several elements by reducing duplicated code
+  If one of the grouped elements is invalid (is not an CSS rule or element), the rule will be disabled
+*/
+/*
+  On this example, you can see that the selectors could be any valid type and can be grouped to apply the same styling
+
+  ul[lang], ol.resume-list, p {
+    font-weight: bold;
+  }
+*/
+/* ul, ol {
+  font-weight: bold;
+} */
+
+/*
+  What is a combinator? Is a token that helps combining various selectors to get a more specific selection
+*/
+/*
+  A ' ' or 'descendant' combinator is used from right to left, taking as first point the element you are selecting and at its left, its ancestors
+  What it means is that it will select only those elements which ha a specific ancestor element
+*/
+/* blockquote p {
+  font-weight: bold;
+} */
+
+/*
+  A '>' or 'child' combinator is used for direct children of the element you want to select
+  The main difference with desendant combinator is that a child is used for direct children (at 1 level) and not below that (where we use the other combinator)
+*/
+/* form > p {
+  font-weight: bold;
+} */
+
+/*
+  A '+' or 'next sibiling' combinator is used for those element which are next to the one reffered (at the same tree level)
+  
+  On this case, you will only select the first blockquote element next to any h2, but it will not select other blockquotes
+
+  h2 + blockquote {
+    font-style: oblique;
+  }
+*/
+/*
+  A ~ or subsequent sibiling combinator is used to select all sibiling elements (defined at right) which are next to the other element (defined at left)
+*/
+/*
+  h2~blockquote {
+    font-style: oblique;
+  }
+*/
+
+/*
+  'Pseudo Class' is a selection based on information related outside the document tree
+  
+  A 'child-indexed' pseudo class are the ones which select elements based on their index amongst their inclusive siblings
+  On the case of 'nth-child(An+B)', the arguments are the following
+  - Select the elements reffered by groups of A (in number)
+  - Set in +B Which one is selected of the groups
+  - In the following example you will want to select the first element of groups of 2
+  - You can also make a shortcut of select the odd or event element of a list, like ':nth-child(odd)'
+*/
+/*
+  li:nth-child(2n+1) {
+    color: red;
+  }
+*/
+
+/*
+  'nth-of-type' is similar to previous rule because is using the same type of arguments, but it checks on the selected elements, but does not work on its children, but in the element/s itself
+*/
+/*
+  #aboutme p:nth-of-type(odd) {
+    color: blue;
+  }
+*/
+
+/*
+  Location pseudo classes, based on links (like its status)
+  - 'visited' is used to mark when a link has been visited
+  - 'focus' is used when a link is been focused by the page (like when you tab to select a specific element only using your keyboard)
+  - 'hover' is used when your the user hover its pointer to a 
+*/
+/*
+  a:visited,
+  a:focus,
+  a:hover {
+    color: red;
+  }
+
+  input:focus,
+  select:focus {
+    outline: 2px solid red;
+  }
+*/
+
+/*
+  ':not' or 'negation matcher' is used to search for those elements which ARE NOT related to the search parameter you add between parenthesis
+*/
+/*
+  section:not(#testimonials) {
+    font-style: italic;
+  }
+*/
+
+/*
+  Pseudo elements is reffered abstract elements of the documents that are not restricted to fitting into the document tree structure
+  A thing to have in mind, its sintaxis uses two colons (::) instead one (:) like are used in pseudo classes.
+  - first-letter selects just the first letter on the element you reffered before
+*/
+/* p::first-letter {
+  font-weight: bolder;
+} */
+
+/* To show how box model works, enable this line */
+/* * { outline: solid 1px black; } */
+
+/*
+  A pixel is 1/16 of an inch
+  Absolute unit is fixed in relation to some phisical measurement
+  Relative unit is relative to another length (like in rem, where its value is based on font-size)
+*/
+/*
+  Border box is a way to override the default way css applies the spacing on each element
+  In this case, the total width or height will be counted by the sum of element's content, padding, border and marging
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  /* --- COMMENTS FOR PROPERTY UNDERSTANDING ONLY --- */
+  /*
+    When the UA is rendering the page in a language like english, the process starts first in inline mode until the UA has no more width and has to work on another block
+    That is called a 'writing mode', which to be modified, has to be done in the body element
+  */
+  /* writing-mode: vertical-rl; */
+
+  /* 
+    Also, you can adjust text direction only with 'direction' property
+  */
+  /* direction: rtl; */
+
+  /*
+    In case you want to work certain languages those texts are oriented in a different way, you can enhance the writing mode with another property like 'text-orientation'
+  */
+  /*
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+  */
+  /*
+    Complex layouts in a easier way using Grid formatting context is a grid container (outher display is block, inner is grid)
+  */
+  display: grid;
+}
+
+h1, h2 {
+  /* On font-family, we can set a series of fonts in case the one before is not finded (as replacements) */
+  font-family: 'Montserrat', sans-serif;
+  color: #3D3D3D;
+}
+
+input, select, textarea {
+  font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+  /*
+    The sticky position makes a difference among other possible values, it renders outside common flow and is put even above its next sibilings, like overwritem them
+  */
+  position: sticky;
+  background-color: white;
+  display: flex;
+  /*
+    For content/elements aligment, they can be aligned with respect to their container o each other
+    - 'justify-content' is to align in the horizontal axis
+    - 'align-items' is to align all items in a container in the vertical axis
+    - 'align-self' is for self element vertical align
+  */
+  justify-content: center;
+}
+
+nav ul {
+  /*
+    Inline flex, outher display type is inline and the inner display is flex
+  */
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+/*
+  Inline display workd different because of some different rules
+  - The block around inline elements is drawn by the layout engine, which will be affected by the parent block (which contains them) and float elements next to the group
+  - Container's height can be modified with 'line-height' property, its default value is content's height
+  - Also, you can set inline content vertical align with 'vertical-align' property
+*/
+nav ul li {
+  margin: 0 0.25rem;
+  /* Those properties which ends with '-inline' or '-block' are logical properties, useful for multilingual sites (and achieve a consistent experience no matter the language) */
+  margin-inline: .25rem;
+  margin-block: 0;
+  line-height: 1.5rem;
+  list-style-type: none;
+}
+
+main {
+  display: grid;
+  row-gap: 20px;
+  max-inline-size: clamp(700px, 50%, 900px);
+  padding-inline: 2rem;
+  padding-block: 0;
+  margin-inline: auto;
+  margin-block: 0;
+  /* In case you want to add an image to the site, you use background-image, and to set its size related to its container, you set them with background-size */
+  /*
+    background-image: url(../img/codeImage.jpg);
+    background-size: contain;
+  */
+}
+
+/*
+  - Display property is about how an element generates boxes-like blocks,
+  - Its outer display is about how they affect other boxes adjacent to the one
+  - On its cases the margin between both sibilings will collapse even if they have different margins one against the other, will prevale the larger value
+*/
+.label-standard {
+  display: block;
+  margin-inline: 0.125rem;
+  margin-block: 0.125rem;
+}
+
+#aboutme {
+  background-color: black;
+  /* On this specific case, if you leave this color in the section, it will be inherit on its children, but it will be replaced when appears other color rule reffering any of its children (like the h1, h2 rule) */
+  color: white;
+  display: flex;
+  /* Overflow is useful when your element's content is to big for a specific screen size (in cases of resizes too)*/
+  /* overflow: auto; */
+  flex-wrap: wrap;
+}
+
+#aboutme h2 {
+  color: white;
+}
+  
+/*
+  In case you want to set a specific element visually among others (overwriting the common order), you can set a numeric value to [order]
+*/
+#aboutme aside {
+  /* order: 10; */
+  text-align: center;
+}
+
+#aboutme footer {
+  text-align: center;
+}
+
+#aboutme footer a, #aboutme footer a:visited#aboutme footer a:hover {
+  color: white;
+}
+
+#portfolio {
+  display: grid;
+  /* 
+    'grid-template-columns' adjusts the elements in columns and has several shortcuts to give shape
+    In this case, I will handle 4 columns using a fractionary unit as fr
+  */
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  /*
+    To have a better implementation of grid tamplate (in a single line), you can use 'grid-template'
+    - First you are setting grid rows, then you are setting grid columns
+  */
+  grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+  /* 'gap', before used as 'grid-gap' is used to create a gap between the elements. You can also use for columns or rows */
+  gap: 10px;
+  /* 
+    To align items in their reserved grid area, you can use
+    - 'align-items' for vertical align
+    - 'justify-items' for horizontal align
+  */
+  align-items: center;
+  justify-items: center;
+  /*
+    For color setting, you can use the common words like white or black, but in case you want to add some opacity, you should use another variant like rgba
+  */
+  /* background-color: #F74D65; */
+  /*
+    In rgba, the arguments stand for:
+    - Red (in base of 2)
+    - Green (in base of 2)
+    - Blue (in base of 2)
+    - Opacity
+  */
+  background-color: rgba(247, 77, 101, 0.9);
+}
+
+#portfolio img {
+  /* In order to size the images according the remaining space and container's total space */
+  max-inline-size: 100%;
+}
+
+#portfolio img:hover {
+  /* Opacity has the same usage than the one seen in rgba, but for this case, it will only affect element's opacity, not color */
+  opacity: 0.7;
+  /* Transition helps to modify certain element properties (like opacity) for a designated time */
+  transition: opacity 1s;
+}
+
+#testimonials {
+  display: flex;
+  /* Testimonial elements now will be oriented as a row in a inverse way */
+  /* flex-direction: row-reverse; */
+  flex-direction: row;
+  /* Flex alternative to overflow could be flex-wrap, where the element can be relocated following flex layout and avoid interface problems */
+  flex-wrap: wrap;
+}
+
+.flex-header, .motto {
+  /* 'flex-grow' is a numeric value that will take a percentage of positive free space to be relocated based on that space */
+  /* 'flex-shrink' is the inverse usage of 'flex-grow', where it will take a part of the space and reduce its size */
+  flex-basis: 100%;
+}
+
+#testimonials blockquote {
+  border-inline: solid 1px black;
+  border-block: solid 1px black;
+  padding-inline: 0.5rem;
+  padding-block: 0;
+  margin-inline: 0;
+  margin-block: 0.5rem;
+}
+
+.personal-resume-picture {
+  max-inline-size: 75px;
+  margin-inline-end: 1rem;
+}
+
+blockquote.featured {
+  /*
+    A shorthand in flex can be used to handle several properties of flex
+    - With 1 number only, it will be 'flex-grow'
+    - With a size only (like % or em), it will be 'flex-basis'
+    - With a number and a size, it will be 'grow' and 'basis'
+    - With 2 numbers it will be 'grow' and 'shrink'
+    - And finally, the full shorthand will be 'flex-grow', 'flex-shrink' and 'flex-basis'
+  */
+  flex: 1 0 auto;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+/*
+  When you want to hide a element from the DOM, you have two options
+  - Use hidden, which will laid the element out and its respective size will be rendered on the DOM, just not painted (it will be present on the DOM tree).
+  - Use none to exclude the element from the render tree (it will even be out of the DOM tree)
+*/
+
+/* This implementations of media queries are used as breakpoints, where the setted rules below will be used when user's screen has a width up to 767px */
+@media screen and (max-width: 767.98px) {
+  #aboutme {
+    justify-content: center;
+    text-align: center;
+  }
+
+  #portfolio {
+    grid-template: 1fr / 1fr 1fr;
+  }
+}
+
+/* @media screen and (min-width: 1200px) {} */
