@@ -53,6 +53,7 @@ Until last version, it is no necesary.
     - `writing mode`, `direction` and `text-orientation` features
     - `-inline` or `-block` properties
   - Understanding about `Flex Layout/Flexbox` with properties like `flex-direction`, `order`, `flex-wrap`, `flex-grow`, `flex-shrink`, `flex-basis`, `justify-content`, `align-items`, `align-self` and `inline-flex`
+  - Understanding about `Grid Layout` with properties like `grid-template-columns`, `gap` and `grid-template`
 
 ## Other practice repos
 | Node | Angular | GraphQL | React | Typescript |
