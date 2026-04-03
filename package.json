@@ -2,7 +2,6 @@
   "name": "html-css-practice",
   "version": "2.0.0",
   "description": "Repository created to record my practice learning HTML & CSS",
-  "main": "index.js",
   "scripts": {
     "semantic-release": "semantic-release"
   },
